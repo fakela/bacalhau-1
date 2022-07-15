@@ -13527,6 +13527,80 @@
       ]
     },
     {
+      "label": "Posts",
+      "name": "posts",
+      "path": "content/posts",
+      "fields": [
+        {
+          "label": "Image",
+          "name": "image",
+          "type": "object",
+          "fields": [
+            {
+              "label": "Image Source",
+              "name": "src",
+              "type": "image",
+              "ui": {
+                "clearable": true
+              },
+              "namespace": [
+                "posts",
+                "image",
+                "src"
+              ]
+            },
+            {
+              "name": "alt",
+              "label": "Alt Text",
+              "type": "string",
+              "namespace": [
+                "posts",
+                "image",
+                "alt"
+              ]
+            }
+          ],
+          "namespace": [
+            "posts",
+            "image"
+          ]
+        },
+        {
+          "type": "string",
+          "label": "Title",
+          "name": "headline",
+          "namespace": [
+            "posts",
+            "headline"
+          ]
+        },
+        {
+          "label": "Text",
+          "name": "text",
+          "type": "rich-text",
+          "namespace": [
+            "posts",
+            "text"
+          ]
+        },
+        {
+          "type": "datetime",
+          "label": "Date",
+          "name": "date",
+          "ui": {
+            "dateFormat": "MMM DD YYYY"
+          },
+          "namespace": [
+            "posts",
+            "date"
+          ]
+        }
+      ],
+      "namespace": [
+        "posts"
+      ]
+    },
+    {
       "label": "Pages",
       "name": "pages",
       "path": "content/pages",
@@ -16412,6 +16486,931 @@
                 "pages",
                 "blocks",
                 "textCards"
+              ]
+            },
+            {
+              "name": "postCards",
+              "label": "Post Cards",
+              "ui": {
+                "defaultItem": {
+                  "label": "",
+                  "headline": "This is a headline",
+                  "subhead": "",
+                  "body": {
+                    "children": [
+                      {
+                        "type": "p",
+                        "children": [
+                          {
+                            "text": "This is a rich text component you can add hyperlinks, etc."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "style": {
+                    "textAlignment": "text-left",
+                    "minHeight": "min-h-0",
+                    "padding": "pt-20 pr-20 pb-20 pl-20",
+                    "contentWidth": "w-full",
+                    "columns": "3",
+                    "labelStyles": "text-black font-1 text-sm mb-0",
+                    "headlineStyles": "text-black font-1 text-5xl mb-0",
+                    "subheadStyles": "text-black font-1 text-3xl mb-0",
+                    "textStyles": "text-black font-1 text-md mb-0",
+                    "contentOrder": "labelHeadingsContent"
+                  },
+                  "cardStyle": {
+                    "type": "solid",
+                    "fillStyles": "bg-gray",
+                    "padding": "pt-4 pr-4 pb-4 pl-4",
+                    "labelStyles": "text-black text-sm mb-0",
+                    "headlineStyles": "text-black text-2xl mb-0",
+                    "subheadStyles": "text-black text-lg mb-0",
+                    "textStyles": "text-black text-sm mb-0",
+                    "buttonType": "solid"
+                  }
+                }
+              },
+              "fields": [
+                {
+                  "type": "object",
+                  "label": "Section Styles",
+                  "name": "style",
+                  "ui": {
+                    "component": "group"
+                  },
+                  "fields": [
+                    {
+                      "label": "Text Alignment",
+                      "name": "textAlignment",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField"
+                      },
+                      "options": [
+                        {
+                          "label": "Left",
+                          "value": "text-left"
+                        },
+                        {
+                          "label": "Center",
+                          "value": "text-center"
+                        },
+                        {
+                          "label": "Right",
+                          "value": "text-right"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "style",
+                        "textAlignment"
+                      ]
+                    },
+                    {
+                      "label": "Minimum Height",
+                      "name": "minHeight",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField",
+                        "mobileMode": true
+                      },
+                      "options": [
+                        {
+                          "label": "none",
+                          "value": "min-h-0"
+                        },
+                        {
+                          "label": "400",
+                          "value": "min-h-100"
+                        },
+                        {
+                          "label": "480",
+                          "value": "min-h-120"
+                        },
+                        {
+                          "label": "560",
+                          "value": "min-h-140"
+                        },
+                        {
+                          "label": "640",
+                          "value": "min-h-160"
+                        },
+                        {
+                          "label": "720",
+                          "value": "min-h-180"
+                        },
+                        {
+                          "label": "800",
+                          "value": "min-h-200"
+                        },
+                        {
+                          "label": "Screen",
+                          "value": "min-h-screen"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "style",
+                        "minHeight"
+                      ]
+                    },
+                    {
+                      "label": "Content Padding",
+                      "name": "padding",
+                      "type": "string",
+                      "ui": {
+                        "component": "paddingControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "style",
+                        "padding"
+                      ]
+                    },
+                    {
+                      "label": "Content Width",
+                      "name": "contentWidth",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField"
+                      },
+                      "options": [
+                        {
+                          "label": "100%",
+                          "value": "w-full"
+                        },
+                        {
+                          "label": "75%",
+                          "value": "w-9/12"
+                        },
+                        {
+                          "label": "66%",
+                          "value": "w-8/12"
+                        },
+                        {
+                          "label": "50%",
+                          "value": "w-6/12"
+                        },
+                        {
+                          "label": "33%",
+                          "value": "w-4/12"
+                        },
+                        {
+                          "label": "25%",
+                          "value": "w-3/12"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "style",
+                        "contentWidth"
+                      ]
+                    },
+                    {
+                      "label": "Columns",
+                      "name": "columns",
+                      "ui": {
+                        "component": "selectField"
+                      },
+                      "type": "string",
+                      "options": [
+                        {
+                          "label": "1",
+                          "value": "1"
+                        },
+                        {
+                          "label": "2",
+                          "value": "2"
+                        },
+                        {
+                          "label": "3",
+                          "value": "3"
+                        },
+                        {
+                          "label": "4",
+                          "value": "4"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "style",
+                        "columns"
+                      ]
+                    },
+                    {
+                      "label": "Typography",
+                      "name": "typographyTitle",
+                      "type": "string",
+                      "ui": {
+                        "component": "ruledTitle"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "style",
+                        "typographyTitle"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Label Style",
+                      "name": "labelStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "style",
+                        "labelStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Headline Style",
+                      "name": "headlineStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "style",
+                        "headlineStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Subhead Style",
+                      "name": "subheadStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "style",
+                        "subheadStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Text Style",
+                      "name": "textStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "style",
+                        "textStyles"
+                      ]
+                    },
+                    {
+                      "label": "Content Order",
+                      "name": "contentOrder",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField"
+                      },
+                      "options": [
+                        {
+                          "label": "Label Headline Text",
+                          "value": "labelHeadingsContent"
+                        },
+                        {
+                          "label": "Label Text Headline",
+                          "value": "labelContentHeadings"
+                        },
+                        {
+                          "label": "Headline Label Text",
+                          "value": "headingsLabelContent"
+                        },
+                        {
+                          "label": "Headline Text Label",
+                          "value": "headingsContentLabel"
+                        },
+                        {
+                          "label": "Text Label Headline",
+                          "value": "contentLabelHeadings"
+                        },
+                        {
+                          "label": "Text Headline Label",
+                          "value": "contentHeadingsLabel"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "style",
+                        "contentOrder"
+                      ]
+                    }
+                  ],
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "postCards",
+                    "style"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "label": "Card Style",
+                  "name": "cardStyle",
+                  "ui": {
+                    "component": "group"
+                  },
+                  "fields": [
+                    {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "cardStyle",
+                        "fillStyles"
+                      ]
+                    },
+                    {
+                      "label": "Padding",
+                      "name": "padding",
+                      "type": "string",
+                      "ui": {
+                        "component": "paddingControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "cardStyle",
+                        "padding"
+                      ]
+                    },
+                    {
+                      "label": "Type",
+                      "name": "type",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField"
+                      },
+                      "options": [
+                        {
+                          "label": "Solid Background",
+                          "value": "solid"
+                        },
+                        {
+                          "label": "Semi Transparent",
+                          "value": "transparent"
+                        },
+                        {
+                          "label": "Horizontal Fade",
+                          "value": "fadeH"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "cardStyle",
+                        "type"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Image",
+                      "name": "imageStyles",
+                      "ui": {
+                        "component": "imageControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "cardStyle",
+                        "imageStyles"
+                      ]
+                    },
+                    {
+                      "label": "Typography",
+                      "name": "typographyTitle",
+                      "type": "string",
+                      "ui": {
+                        "component": "ruledTitle"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "cardStyle",
+                        "typographyTitle"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Label",
+                      "name": "labelStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "cardStyle",
+                        "labelStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Headline",
+                      "name": "headlineStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "cardStyle",
+                        "headlineStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Subhead",
+                      "name": "subheadStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "cardStyle",
+                        "subheadStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Text",
+                      "name": "textStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "cardStyle",
+                        "textStyles"
+                      ]
+                    },
+                    {
+                      "label": "Button",
+                      "name": "buttonTitle",
+                      "type": "string",
+                      "ui": {
+                        "component": "ruledTitle"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "cardStyle",
+                        "buttonTitle"
+                      ]
+                    },
+                    {
+                      "label": "Type",
+                      "name": "buttonType",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField"
+                      },
+                      "options": [
+                        {
+                          "label": "Primary",
+                          "value": "primary"
+                        },
+                        {
+                          "label": "Secondary",
+                          "value": "secondary"
+                        },
+                        {
+                          "label": "Minor",
+                          "value": "minor"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "cardStyle",
+                        "buttonType"
+                      ]
+                    }
+                  ],
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "postCards",
+                    "cardStyle"
+                  ]
+                },
+                {
+                  "label": "Background",
+                  "name": "background",
+                  "type": "object",
+                  "fields": [
+                    {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "background",
+                        "fillStyles"
+                      ]
+                    },
+                    {
+                      "label": "Image",
+                      "name": "src",
+                      "type": "image",
+                      "ui": {
+                        "clearable": true
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "background",
+                        "src"
+                      ]
+                    },
+                    {
+                      "label": "Image Position",
+                      "name": "position",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "type": "string",
+                      "options": [
+                        {
+                          "label": "Center",
+                          "value": "object-center"
+                        },
+                        {
+                          "label": "Top",
+                          "value": "object-top"
+                        },
+                        {
+                          "label": "Right Top",
+                          "value": "object-right-top"
+                        },
+                        {
+                          "label": "Right",
+                          "value": "object-right"
+                        },
+                        {
+                          "label": "Right Bottom",
+                          "value": "object-right-bottom"
+                        },
+                        {
+                          "label": "Bottom",
+                          "value": "object-bottom"
+                        },
+                        {
+                          "label": "Left Bottom",
+                          "value": "object-left-bottom"
+                        },
+                        {
+                          "label": "Left",
+                          "value": "object-left"
+                        },
+                        {
+                          "label": "Left Top",
+                          "value": "object-left-top"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "background",
+                        "position"
+                      ]
+                    },
+                    {
+                      "label": "Ornaments",
+                      "name": "ornaments",
+                      "type": "object",
+                      "list": true,
+                      "fields": [
+                        {
+                          "label": "Image",
+                          "name": "src",
+                          "type": "image",
+                          "ui": {
+                            "clearable": true
+                          },
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "postCards",
+                            "background",
+                            "ornaments",
+                            "src"
+                          ]
+                        },
+                        {
+                          "label": "Alignment",
+                          "name": "alignment",
+                          "ui": {
+                            "component": "select"
+                          },
+                          "type": "string",
+                          "options": [
+                            {
+                              "label": "Center",
+                              "value": "center"
+                            },
+                            {
+                              "label": "Top",
+                              "value": "top"
+                            },
+                            {
+                              "label": "Right Top",
+                              "value": "top-right"
+                            },
+                            {
+                              "label": "Right",
+                              "value": "right"
+                            },
+                            {
+                              "label": "Right Bottom",
+                              "value": "bottom-right"
+                            },
+                            {
+                              "label": "Bottom",
+                              "value": "bottom"
+                            },
+                            {
+                              "label": "Left Bottom",
+                              "value": "bottom-left"
+                            },
+                            {
+                              "label": "Left",
+                              "value": "left"
+                            },
+                            {
+                              "label": "Left Top",
+                              "value": "top-left"
+                            }
+                          ],
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "postCards",
+                            "background",
+                            "ornaments",
+                            "alignment"
+                          ]
+                        },
+                        {
+                          "label": "Width",
+                          "name": "width",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "postCards",
+                            "background",
+                            "ornaments",
+                            "width"
+                          ]
+                        },
+                        {
+                          "label": "Height",
+                          "name": "height",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "postCards",
+                            "background",
+                            "ornaments",
+                            "height"
+                          ]
+                        },
+                        {
+                          "label": "X Offset",
+                          "name": "xOffset",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "postCards",
+                            "background",
+                            "ornaments",
+                            "xOffset"
+                          ]
+                        },
+                        {
+                          "label": "Y Offset",
+                          "name": "yOffset",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "postCards",
+                            "background",
+                            "ornaments",
+                            "yOffset"
+                          ]
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "background",
+                        "ornaments"
+                      ]
+                    }
+                  ],
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "postCards",
+                    "background"
+                  ]
+                },
+                {
+                  "label": "Label",
+                  "name": "label",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "postCards",
+                    "label"
+                  ]
+                },
+                {
+                  "label": "Headline",
+                  "name": "headline",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "postCards",
+                    "headline"
+                  ]
+                },
+                {
+                  "label": "Subhead",
+                  "name": "subhead",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "postCards",
+                    "subhead"
+                  ]
+                },
+                {
+                  "label": "Body",
+                  "name": "body",
+                  "type": "rich-text",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "postCards",
+                    "body"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "label": "Buttons",
+                  "name": "buttons",
+                  "list": true,
+                  "ui": {
+                    "component": "itemListField",
+                    "defaultItem": {
+                      "label": "Button Label",
+                      "link": "/",
+                      "type": "primary"
+                    }
+                  },
+                  "fields": [
+                    {
+                      "label": "Label",
+                      "name": "label",
+                      "type": "string",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "buttons",
+                        "label"
+                      ]
+                    },
+                    {
+                      "label": "Link",
+                      "name": "link",
+                      "type": "string",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "buttons",
+                        "link"
+                      ]
+                    },
+                    {
+                      "label": "Type",
+                      "name": "type",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Primary",
+                          "value": "primary"
+                        },
+                        {
+                          "label": "Secondary",
+                          "value": "secondary"
+                        },
+                        {
+                          "label": "Minor",
+                          "value": "minor"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "postCards",
+                        "buttons",
+                        "type"
+                      ]
+                    }
+                  ],
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "postCards",
+                    "buttons"
+                  ]
+                },
+                {
+                  "label": "Navigation Label",
+                  "name": "navigationLabel",
+                  "description": "Add a jump to this section to the navigation.",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "postCards",
+                    "navigationLabel"
+                  ]
+                }
+              ],
+              "namespace": [
+                "pages",
+                "blocks",
+                "postCards"
               ]
             },
             {

@@ -4,6 +4,7 @@
     "resolveType": "multiCollectionDocumentList",
     "collections": [
       "global",
+      "posts",
       "pages"
     ]
   },
@@ -42,6 +43,18 @@
     "resolveType": "collectionDocumentList",
     "collection": "global"
   },
+  "PostsDocument": {
+    "type": "PostsDocument",
+    "resolveType": "collectionDocument",
+    "collection": "posts",
+    "createPostsDocument": "create",
+    "updatePostsDocument": "update"
+  },
+  "PostsConnection": {
+    "type": "PostsConnection",
+    "resolveType": "collectionDocumentList",
+    "collection": "posts"
+  },
   "PagesBlocks": {
     "type": "PagesBlocks",
     "resolveType": "unionData",
@@ -49,6 +62,7 @@
       "feature": "PagesBlocksFeature",
       "photoCards": "PagesBlocksPhotoCards",
       "textCards": "PagesBlocksTextCards",
+      "postCards": "PagesBlocksPostCards",
       "banner": "PagesBlocksBanner",
       "embed": "PagesBlocksEmbed",
       "tailwindFeature": "PagesBlocksTailwindFeature",

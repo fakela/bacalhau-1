@@ -13,7 +13,8 @@ export default function DynamicPage(
   });
   return (
     <Layout data={data}>
-      <Blocks {...data.getPagesDocument.data} />
+      <p className="text-black pt-24">Posts {JSON.stringify(props.posts.getPostsList?.edges )}</p>
+      <Blocks {...data.getPagesDocument.data} posts={props.posts?.getPostsList?.edges} />
     </Layout>
   );
 }
@@ -23,11 +24,13 @@ export const getStaticProps = async ({ params }) => {
   const tinaProps = await client.ContentQuery({
     relativePath: `${params.filename}.md`,
   });
+  const postProps = await client.getPostsList();
   return {
     props: {
       data: tinaProps.data,
       query: tinaProps.query,
       variables: tinaProps.variables,
+      posts: postProps.data
     },
   };
 };
