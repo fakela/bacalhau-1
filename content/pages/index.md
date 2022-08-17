@@ -153,7 +153,7 @@ blocks:
       $ bacalhau get CID
     buttons:
       - label: Demo Video
-        link: 'https://www.youtube.com/watch?v=wkOh05J5qgA'
+        link: 'https://youtu.be/4YHkmL4Ld74'
       - label: Learn More
         link: /architecture
     _template: tailwindFeature
