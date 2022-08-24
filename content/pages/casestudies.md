@@ -67,7 +67,7 @@ blocks:
           - label: Demo (Youtube)
             link: 'https://www.youtube.com/watch?v=t2AHD8yJhLY'
           - label: Source (Github)
-            link: /
+            link: 'https://github.com/wesfloyd/bacalhau_socat_test'
       - image:
           src: >-
             https://res.cloudinary.com/protocolai/image/upload/v1659095481/bacalhau/bacalhau-openmm_bljzhl.png
