@@ -20,7 +20,7 @@ export default function DynamicPage(
       <Layout pageData={props.globals.getPagesDocument.data} globalData={props.globals.getGlobalDocument.data}>
         <section>
           <div className="max-w-site-3/4 mx-auto my-40 px-20 sm:px-8">
-            <img className="mb-10" src={post.image.src} alt={post.image.alt || post.headline} />
+            {post?.image?.src && <img className="mb-10" src={post.image.src} alt={post.image.alt || post.headline} />}
             <p className="text-gray-dark text-sm font-3 mb-4">{postDate.toDateString()}</p>
             <h1 className="text-primary text-5xl font-bold font-1 mb-10">{post.headline}</h1>
             <div className="markdown font-2 text-base">
