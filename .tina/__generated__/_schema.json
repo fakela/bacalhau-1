@@ -13641,7 +13641,7 @@
           "name": "blocks",
           "label": "Sections",
           "ui": {
-            "component": "titledListItems"
+            "component": "sectionListItems"
           },
           "templates": [
             {

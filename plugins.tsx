@@ -12,7 +12,7 @@ import TypeControl from './components/tina/TypeControl'
 import TypeSizeControl from './components/tina/TypeSizeControl'
 import { TextField, GroupListField, BlocksFieldPlugin } from 'tinacms'
 
-export const TitledListItemsPlugin = {
+export const SectionListItemsPlugin = {
   ...BlocksFieldPlugin,
   Component: (props) => {
     const itemProps = (item) => {
@@ -44,7 +44,7 @@ export const TitledListItemsPlugin = {
     return <BlocksFieldPlugin.Component {...props} field={{ ...props.field, templates }} />
   },
   __type: 'field',
-  name: "titledListItems",
+  name: "sectionListItems",
 }
 export const itemListFieldPlugin = {
   Component: (props) => {

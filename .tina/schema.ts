@@ -31,7 +31,7 @@ export default defineSchema({
           name: "blocks",
           label: "Sections",
           ui: {
-            component: "titledListItems",
+            component: "sectionListItems",
           },
           templates: [
             featureBlockSchema,
@@ -113,8 +113,8 @@ export const tinaConfig = defineConfig({
     /**
      * Import custom Tina plugins (fields)
      */
-    import("../plugins").then(({ TitledListItemsPlugin }) => {
-      cms.plugins.add(TitledListItemsPlugin);
+    import("../plugins").then(({ SectionListItemsPlugin }) => {
+      cms.plugins.add(SectionListItemsPlugin);
     });
     import("../plugins").then(({ itemListFieldPlugin }) => {
       cms.plugins.add(itemListFieldPlugin);
