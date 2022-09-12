@@ -7917,6 +7917,21 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
+            "value": "excerpt"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
             "value": "text"
           },
           "arguments": [],
@@ -20712,6 +20727,20 @@
           "name": {
             "kind": "Name",
             "value": "headline"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "excerpt"
           },
           "type": {
             "kind": "NamedType",

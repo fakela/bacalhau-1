@@ -643,6 +643,7 @@ type PostsImage {
 type Posts {
   image: PostsImage
   headline: String
+  excerpt: String
   text: JSON
   date: String
 }
@@ -1758,6 +1759,7 @@ input PostsImageMutation {
 input PostsMutation {
   image: PostsImageMutation
   headline: String
+  excerpt: String
   text: JSON
   date: String
 }

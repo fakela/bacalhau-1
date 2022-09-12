@@ -11,10 +11,11 @@ export default function DynamicPage(
     variables: props.variables,
     data: props.data,
   });
+  const posts = props.posts?.getPostsList?.edges
+
   return (
-    <Layout data={data}>
-      <p className="text-black pt-24">Posts {JSON.stringify(props.posts.getPostsList?.edges )}</p>
-      <Blocks {...data.getPagesDocument.data} posts={props.posts?.getPostsList?.edges} />
+    <Layout pageData={data.getPagesDocument.data} globalData={data.getGlobalDocument.data}>
+      <Blocks {...data.getPagesDocument.data} posts={props.posts} />
     </Layout>
   );
 }

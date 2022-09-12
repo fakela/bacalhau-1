@@ -31,9 +31,18 @@ export const postsSchema: TinaCollection = {
       name: "headline",
     },
     {
+      type: "string",
+      label: "Excerpt",
+      name: "excerpt",
+      description: "The text used in the card summary",
+      ui: {
+        component: 'textarea',
+      },
+    },
+    {
+      type: "rich-text",
       label: "Text",
       name: "text",
-      type: "rich-text",
     },
     {
       type: "datetime",

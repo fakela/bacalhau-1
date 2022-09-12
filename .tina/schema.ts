@@ -30,6 +30,9 @@ export default defineSchema({
           list: true,
           name: "blocks",
           label: "Sections",
+          ui: {
+            component: "titledListItems",
+          },
           templates: [
             featureBlockSchema,
             photoCardsBlockSchema,
@@ -90,11 +93,6 @@ export const tinaConfig = defineConfig({
   },
   cmsCallback: (cms) => {
     /**
-     * Enables experimental branch switcher
-     */
-    cms.flags.set("branch-switcher", true);
-
-    /**
      * When `tina-admin` is enabled, this plugin configures contextual editing for collections
      */
     import("tinacms").then(({ RouteMappingPlugin }) => {
@@ -115,6 +113,9 @@ export const tinaConfig = defineConfig({
     /**
      * Import custom Tina plugins (fields)
      */
+    import("../plugins").then(({ TitledListItemsPlugin }) => {
+      cms.plugins.add(TitledListItemsPlugin);
+    });
     import("../plugins").then(({ itemListFieldPlugin }) => {
       cms.plugins.add(itemListFieldPlugin);
     });
@@ -167,4 +168,5 @@ export const tinaConfig = defineConfig({
 
     return createForm(formConfig);
   },
+
 });

@@ -1,4 +1,5 @@
 import { ExperimentalGetTinaClient } from "../../.tina/__generated__/types";
+import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { useTina } from "tinacms/dist/edit-state";
 import { Layout } from "../../components/layout";
 
@@ -6,42 +7,46 @@ export default function DynamicPage(
   props: AsyncReturnType<typeof getStaticProps>["props"]
 ) {
   const { data } = useTina({
-    // posts: props.posts
     query: props.query,
     variables: props.variables,
     data: props.data,
   });
+  const post = data.getPostsDocument.data
+  const postDate = new Date(post.date)
+
+
   return (
-    <p className="text-black pt-24">Posts {JSON.stringify(props.data )}</p>
-    // <Layout data={data}>
-    //   <p className="text-black pt-24">Posts {JSON.stringify(props.posts.getPostsList?.edges )}</p>
-    // </Layout>
+    <>
+      <Layout pageData={props.globals.getPagesDocument.data} globalData={props.globals.getGlobalDocument.data}>
+        <section>
+          <div className="max-w-site-3/4 mx-auto my-40 px-20 sm:px-8">
+            <img className="mb-10" src={post.image.src} alt={post.image.alt || post.headline} />
+            <p className="text-gray-dark text-sm font-3 mb-4">{postDate.toDateString()}</p>
+            <h1 className="text-primary text-5xl font-bold font-1 mb-10">{post.headline}</h1>
+            <div className="markdown font-2 text-base">
+              <TinaMarkdown content={post.text} />
+            </div>
+          </div>
+        </section>
+      </Layout>
+    </>
   );
 }
 
-// export const getStaticProps = async ({ params }) => {
-//   const client = ExperimentalGetTinaClient();
-//   const postProps = await client.getPostsList();
-//   return {
-//     props: {
-//       posts: postProps.data
-//     },
-//   };
-// };
-
 export const getStaticProps = async ({ params }) => {
   const client = ExperimentalGetTinaClient();
-  // const tinaProps = await client.ContentQuery({
-  //   relativePath: `../posts/${params.filename}.md`,
-  // })
+  const tinaProps = await client.ContentQuery({
+    relativePath: `../posts/${params.filename}.md`,
+  })
   const postProps = await client.getPostsDocument({
     relativePath: `../posts/${params.filename}.md`,
   })
   return {
     props: {
-      data: postProps.data,
+      globals: tinaProps.data,
       query: postProps.query,
-      variables: postProps.variables
+      variables: postProps.variables,
+      data: postProps.data
     },
   };
 };

@@ -12,9 +12,7 @@ export default function PostsPage(
     data: props.data,
   });
   return (
-    <Layout data={data}>
-      <p>Post index</p>
-      <p>JSON {JSON.stringify(props.posts)}</p>
+    <Layout pageData={data.getPagesDocument.data} globalData={data.getGlobalDocument.data}>
       <Blocks {...data.getPagesDocument.data} posts={props.posts} />
     </Layout>
   );
