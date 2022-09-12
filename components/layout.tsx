@@ -130,13 +130,15 @@ export const Layout = ({
           <script
             dangerouslySetInnerHTML={{
               __html: `
-              if (document.location.hostname === "${globalData?.siteUrl}") {
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                  gtag('config', '${globalData?.gtmId}', {
-                    page_path: window.location.pathname,
-                  });
+              if (document.location.hostname.replace("www.", "") === "${globalData?.siteUrl}") {
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){
+                  dataLayer.push(arguments)
+                ;}
+                gtag('js', new Date());
+                gtag('config', '${globalData?.gtmId}', {
+                  page_path: window.location.pathname,
+                });
                 }
               `,
             }}

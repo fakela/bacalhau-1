@@ -23,8 +23,8 @@ blocks:
     headline: Bacalhau Project
     subhead: Data. Transformed.
     body: >
-      Bacalhau transforms Big Data processing by giving developers simple, low
-      cost, “Distributed First” tools that unlock a new collaborative ecosystem.
+      Simple, low cost, “Distributed First” tools that unlock an open,
+      collaborative ecosystem.
     buttons:
       - label: Learn More
         link: /architecture
@@ -47,11 +47,13 @@ blocks:
       fillStyles: bg-accent3
     label: ''
     headline: Why Bacalhau?
-    subhead: Bacalhau seeks to address deep rooted gaps in the research community
+    subhead: >-
+      Bacalhau seeks to address deep rooted gaps in the research community.
+      Existing data processing infrastructure are:
     body: |
       *   Expensive and slow, particularly with large datasets
       *   Complicated that require significant rewriting to use
-      *   Difficult to share and collaborate with other orginazations
+      *   Difficult to share and collaborate with other organizations
     _template: tailwindFeature
   - style:
       alignment: 'flex-row text-left items-end items-start-vertical sm:flex-col-reverse'
@@ -115,16 +117,14 @@ blocks:
       any data processing workload.
     body: >
       Bacalhau enables users to run arbitrary docker containers and wasm images
-      as tasks against data stored in IPFS. This architecture is referred to as
-      Compute Over Data (or COD). The Portuguese word for salted Cod fish is
-      "Bacalhau" which is the origin of the project's name.
+      against data stored in IPFS. Bacalhau is a peer-to-peer network of nodes
+      where each node participates in executing (computing) jobs submitted to
+      the cluster.
 
 
-      Bacalhau operates as a peer-to-peer network of nodes where each node
-      participates in executing (computing) jobs submitted to the cluster.
-      Bacalhau CLI requests are sent to nodes in the cluster, which then
-      broadcasts messages over the transport layer to other nodes in the
-      cluster.
+      This architecture is referred to as **Compute Over Data** (or COD). The
+      Portuguese word for salted Cod fish is **Bacalhau**, which is the origin
+      of the project's name.
     _template: tailwindFeature
   - tailwind:
       section: pb-26
@@ -137,7 +137,7 @@ blocks:
       headline: ''
       subhead: 'font-1 font-bold text-primary text-base mb-8 sm:text-xl sm:font-normal'
       text: bg-accent1 p-6 text-white text-xs font-3 mb-8
-      buttons: 'text-accent2 font-bold text-base '
+      buttons: text-accent2 font-bold text-base space-x-10
       button: ''
     image:
       src: >-
@@ -146,12 +146,14 @@ blocks:
     headline: ''
     subhead: Submitting Jobs is Easy
     body: |
-      $ bacalhau run ubuntu echo hello
+      $ bacalhau docker run ubuntu echo hello
 
-      $ bacalhau list --wide --sort-by=id --id-filter=\<JOB\_ID>&#x20;
+      $ bacalhau list
 
-      $ ipfs get \<RESULT\_CID>
+      $ bacalhau get CID
     buttons:
+      - label: Demo Video
+        link: 'https://youtu.be/4YHkmL4Ld74'
       - label: Learn More
         link: /architecture
     _template: tailwindFeature
@@ -197,6 +199,7 @@ blocks:
 meta:
   pageTitle: Bacalhau
   pageDescription: Reinventing Science through reproducible data pipelines
-  siteImageSrc: ''
+  siteImageSrc: >-
+    https://res.cloudinary.com/protocolai/image/upload/v1657726476/bacalhau/bacalhua-social_hbrzct.png
 ---
 

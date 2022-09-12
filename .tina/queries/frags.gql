@@ -394,8 +394,10 @@ fragment LayoutQueryFragment on Query {
             headline
             subhead
             text
-            link
-            buttonLabel
+            buttons {
+              link
+              label
+            }
           }
           navigationLabel
         }

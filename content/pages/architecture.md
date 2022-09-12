@@ -54,8 +54,9 @@ blocks:
       $ ipfs get \<RESULT\_CID>
     _template: tailwindFeature
 meta:
-  pageTitle: Bacalhau
+  pageTitle: Bacalhau - Architecture
   pageDescription: Reinventing Science through reproducible data pipelines
-  siteImageSrc: ''
+  siteImageSrc: >-
+    https://res.cloudinary.com/protocolai/image/upload/v1657726476/bacalhau/bacalhua-social_hbrzct.png
 ---
 

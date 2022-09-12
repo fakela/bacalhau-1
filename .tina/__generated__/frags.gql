@@ -464,8 +464,11 @@ fragment GlobalParts on Global {
         headline
         subhead
         text
-        link
-        buttonLabel
+        buttons {
+          __typename
+          label
+          link
+        }
       }
       rule2
       navigationLabel
@@ -926,8 +929,11 @@ fragment PagesParts on Pages {
         headline
         subhead
         text
-        link
-        buttonLabel
+        buttons {
+          __typename
+          label
+          link
+        }
       }
       rule2
       navigationLabel

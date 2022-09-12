@@ -296,16 +296,30 @@ export const tailwindCardsBlockSchema: TinaTemplate = {
           type: "rich-text",
         },
         {
-          type: "string",
-          label: "Link",
-          name: "link",
-        },
-        {
-          type: "string",
-          label: "Button Label",
-          name: "buttonLabel",
-          description: "A button will be included if you have a link and button label, with only a link the entire card is linked"
-        },
+          type: "object",
+          label: "Buttons",
+          name: "buttons",
+          list: true,
+          ui: {
+            component: 'itemListField',
+            defaultItem: {
+              label: "Button Label",
+              link: "/",
+            },
+          },
+          fields: [
+            {
+              label: "Label",
+              name: "label",
+              type: "string",
+            },
+            {
+              label: "Link",
+              name: "link",
+              type: "string",
+            },
+          ]
+        }
       ]
     },
     {

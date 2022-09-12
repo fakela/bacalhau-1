@@ -13425,28 +13425,51 @@
                       ]
                     },
                     {
-                      "type": "string",
-                      "label": "Link",
-                      "name": "link",
+                      "type": "object",
+                      "label": "Buttons",
+                      "name": "buttons",
+                      "list": true,
+                      "ui": {
+                        "component": "itemListField",
+                        "defaultItem": {
+                          "label": "Button Label",
+                          "link": "/"
+                        }
+                      },
+                      "fields": [
+                        {
+                          "label": "Label",
+                          "name": "label",
+                          "type": "string",
+                          "namespace": [
+                            "global",
+                            "blocks",
+                            "tailwindCards",
+                            "items",
+                            "buttons",
+                            "label"
+                          ]
+                        },
+                        {
+                          "label": "Link",
+                          "name": "link",
+                          "type": "string",
+                          "namespace": [
+                            "global",
+                            "blocks",
+                            "tailwindCards",
+                            "items",
+                            "buttons",
+                            "link"
+                          ]
+                        }
+                      ],
                       "namespace": [
                         "global",
                         "blocks",
                         "tailwindCards",
                         "items",
-                        "link"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Button Label",
-                      "name": "buttonLabel",
-                      "description": "A button will be included if you have a link and button label, with only a link the entire card is linked",
-                      "namespace": [
-                        "global",
-                        "blocks",
-                        "tailwindCards",
-                        "items",
-                        "buttonLabel"
+                        "buttons"
                       ]
                     }
                   ],
@@ -20024,28 +20047,51 @@
                       ]
                     },
                     {
-                      "type": "string",
-                      "label": "Link",
-                      "name": "link",
+                      "type": "object",
+                      "label": "Buttons",
+                      "name": "buttons",
+                      "list": true,
+                      "ui": {
+                        "component": "itemListField",
+                        "defaultItem": {
+                          "label": "Button Label",
+                          "link": "/"
+                        }
+                      },
+                      "fields": [
+                        {
+                          "label": "Label",
+                          "name": "label",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "tailwindCards",
+                            "items",
+                            "buttons",
+                            "label"
+                          ]
+                        },
+                        {
+                          "label": "Link",
+                          "name": "link",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "tailwindCards",
+                            "items",
+                            "buttons",
+                            "link"
+                          ]
+                        }
+                      ],
                       "namespace": [
                         "pages",
                         "blocks",
                         "tailwindCards",
                         "items",
-                        "link"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Button Label",
-                      "name": "buttonLabel",
-                      "description": "A button will be included if you have a link and button label, with only a link the entire card is linked",
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "tailwindCards",
-                        "items",
-                        "buttonLabel"
+                        "buttons"
                       ]
                     }
                   ],

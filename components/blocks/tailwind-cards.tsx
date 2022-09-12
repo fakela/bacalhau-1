@@ -34,19 +34,24 @@ const Card = ({ data, index, tw, parentField = ""  }) => {
             </div>
           )}
         </div>
-        {data.link && data.buttonLabel && (
-          <div className={tw.cardButtons}>
-            <a
-              className={tw.cardButton}
-              href={data.link}
-              target={linkTarget(data.link)}
-              key={index}
-              data-tinafield={`${parentField}.${index}.buttonLabel`}
-            >
-              { data.buttonLabel }
-            </a>
-          </div>
-        )}
+        <div className={tw.cardButtons}>
+          {data.buttons?.length > 0 &&
+            data.buttons.map(function (button, index) {
+              const element = (
+                <a
+                  className={tw.cardButton}
+                  href={button.link}
+                  target={linkTarget(button.link)}
+                  key={index}
+                  data-tinafield={`${parentField}.${index}.buttonLabel`}
+                >
+                  { button.label }
+                </a>
+              );
+              return element;
+            })
+          }
+        </div>
       </div>
     </div>
   )
