@@ -1,8 +1,10 @@
 import { defineSchema, defineConfig } from "tinacms";
 import { globalSchema } from "./global/global";
+import { postsSchema } from "./posts-collection";
 import { featureBlockSchema } from "./feature";
 import { photoCardsBlockSchema } from "./photo-cards";
 import { textCardsBlockSchema } from "./text-cards";
+import { postCardsBlockSchema } from "./post-cards";
 import { bannerBlockSchema } from "./banner";
 import { embedBlockSchema } from "./embed";
 import { tailwindFeatureBlockSchema } from "./tailwind-feature";
@@ -11,6 +13,7 @@ import { tailwindCardsBlockSchema } from "./tailwind-cards";
 export default defineSchema({
   collections: [
     globalSchema,
+    postsSchema,
     {
       label: "Pages",
       name: "pages",
@@ -27,10 +30,14 @@ export default defineSchema({
           list: true,
           name: "blocks",
           label: "Sections",
+          ui: {
+            component: "sectionListItems",
+          },
           templates: [
             featureBlockSchema,
             photoCardsBlockSchema,
             textCardsBlockSchema,
+            postCardsBlockSchema,
             bannerBlockSchema,
             embedBlockSchema,
             tailwindFeatureBlockSchema,
@@ -86,11 +93,6 @@ export const tinaConfig = defineConfig({
   },
   cmsCallback: (cms) => {
     /**
-     * Enables experimental branch switcher
-     */
-    cms.flags.set("branch-switcher", true);
-
-    /**
      * When `tina-admin` is enabled, this plugin configures contextual editing for collections
      */
     import("tinacms").then(({ RouteMappingPlugin }) => {
@@ -111,6 +113,9 @@ export const tinaConfig = defineConfig({
     /**
      * Import custom Tina plugins (fields)
      */
+    import("../plugins").then(({ SectionListItemsPlugin }) => {
+      cms.plugins.add(SectionListItemsPlugin);
+    });
     import("../plugins").then(({ itemListFieldPlugin }) => {
       cms.plugins.add(itemListFieldPlugin);
     });
@@ -163,4 +168,5 @@ export const tinaConfig = defineConfig({
 
     return createForm(formConfig);
   },
+
 });

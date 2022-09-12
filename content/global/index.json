@@ -79,6 +79,10 @@
         "link": "/community"
       },
       {
+        "label": "Blog",
+        "link": "/blog"
+      },
+      {
         "label": "Docs",
         "link": "https://docs.bacalhau.org/"
       }
@@ -93,7 +97,7 @@
       "style": {
         "minHeight": "min-h-0",
         "fullWidth": false,
-        "padding": "pt-20 pb-20 pr-20 pl-20"
+        "padding": "pt-20 pb-20 pr-20 pl-20 sm:pt-10 sm:pb-10 sm:pr-10 sm:pl-10"
       },
       "background": {
         "fillStyles": "bg-black"

@@ -9,11 +9,18 @@ export const globalHeader: TinaField = {
   },
   fields: [
     {
+      type: "object",
       label: "Navigation",
-      description: "Additional links in the header",
       name: "navItems",
       list: true,
-      type: "object",
+      description: "Additional links in the header",
+      ui: {
+        component: 'itemListField',
+        defaultItem: {
+          label: "Nav",
+          link: "#",
+        },
+      },
       fields: [{
         label: "Label",
         name: "label",

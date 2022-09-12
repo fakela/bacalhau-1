@@ -29,11 +29,10 @@ const fontLeading = (font) => {
 export const ThemeContext = React.createContext({});
 
 export const Layout = ({
-  data,
+  globalData,
+  pageData,
   children,
 }) => {
-  const pageData = data.getPagesDocument.data
-  const globalData = data.getGlobalDocument.data
   return (
     <>
       <ThemeContext.Provider value={globalData}>
@@ -116,6 +115,11 @@ export const Layout = ({
               .markdown ul li,
               .markdown ol li {
                 margin-bottom: .5rem;
+              }
+              .markdown h2 {
+                color: var(--primary-color);
+                font-size: var(--text-size-2xl);
+                margin: 60px 0 20px;
               }
             `,
             }}
