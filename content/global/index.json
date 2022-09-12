@@ -71,16 +71,16 @@
         "link": "/architecture"
       },
       {
-        "label": "Blog",
-        "link": "/posts"
-      },
-      {
         "label": "Case Studies",
         "link": "/casestudies/"
       },
       {
         "label": "Community",
         "link": "/community"
+      },
+      {
+        "label": "Blog",
+        "link": "/posts"
       },
       {
         "label": "Docs",
