@@ -1,7 +1,6 @@
 ---
 image:
-  src: >-
-    https://res.cloudinary.com/protocolai/image/upload/v1659095159/bacalhau/bacalhau-eurec4a_kraedg.png
+  src: ''
 headline: Blog Post 1
 excerpt: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget velit diam.
@@ -42,6 +41,6 @@ text: >
   sed augue sit amet pretium. Ut sit amet auctor nunc. Nulla pretium ante non
   sem venenatis, eu accumsan neque dignissim. Proin efficitur commodo nisl, et
   vulputate tellus. Donec scelerisque ullamcorper consequat.
-date: '2022-09-10T05:00:00.000Z'
+date: '2022-09-16T04:00:00.000Z'
 ---
 
