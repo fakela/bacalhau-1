@@ -68,6 +68,9 @@ text: >+
   ## **Gitcoin Grants Round 15**
 
 
+  ![](https://res.cloudinary.com/protocolai/image/upload/v1663680943/bacalhau/Screen_Shot_2022-09-20_at_9.31.11_AM_rssxtk.png)
+
+
   Our parent organization, Protocol Labs, is helping to fund the recent Gitcoin
   Grants Round 15 included a specific section for supporting Decentralized
   Science. Each Gitcoin grants program runs for 15 days and allows donors to
