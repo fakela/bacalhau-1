@@ -1,6 +1,7 @@
 ---
 image:
-  src: ''
+  src: >-
+    https://res.cloudinary.com/protocolai/image/upload/v1663680466/bacalhau/labdao_logo_u8xacn.png
 headline: Bacalhau Supports Decentralized Science
 excerpt: >-
   Bacalhau and Protocol Labs are proud to support the growth of the burgeoning
