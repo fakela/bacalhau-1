@@ -4,34 +4,16 @@ image:
     https://res.cloudinary.com/protocolai/image/upload/v1663680466/bacalhau/labdao_logo_u8xacn.png
 headline: Bacalhau Partners with LabDAO to Accelerate Scientific Progress
 excerpt: >-
-  Bacalhau and Protocol Labs are proud to support the growth of the burgeoning
-  Decentralized Science or “DeSci” movement. The DeSci community aims to bring
-  the benefits of decentralized ownership models (often referred to as “Web3”
-  technologies) to the scientific research process. Companies and DAOs
-  (Decentralized Autonomous Organizations) are forming in the community to
-  empower new models of research ownership (IP), collaboration, and
-  reproducibility. 
+  In support of the DeSci movement, the Bacalhau project is announcing our
+  partnership with LabDAO, which will foster open, reproducible data processing
+  for the broader DeSci community.
 text: >
-  Bacalhau and Protocol Labs are proud to support the growth of the burgeoning
-  Decentralized Science or “DeSci” movement. The DeSci community aims to bring
-  the benefits of decentralized ownership models (often referred to as “Web3”
-  technologies) to the scientific research process. Companies and DAOs
-  (Decentralized Autonomous Organizations) are forming in the community to
-  empower new models of research ownership (IP), collaboration, and
-  reproducibility.&#x20;
-
-
   ## **LabDAO Partnership**
 
 
   In support of the DeSci movement, the Bacalhau project is announcing our
   partnership with LabDAO, which will foster open, reproducible data processing
   for the broader DeSci community.
-
-
-  ![LabDAO
-  Logo](https://res.cloudinary.com/protocolai/image/upload/v1663681622/bacalhau/labexchange\_kwdzih.jpg
-  "")
 
 
   LabDAO’s mission is to become an open, community-run network of wet and dry
@@ -41,6 +23,11 @@ text: >
   scientists' work. Bacalhau will partner with LabDAO to power the data
   processing engine for their service [Lab
   Exchange](https://docs.labdao.xyz/lab-exchange/what\_is\_openlab).
+
+
+  ![LabDAO
+  Logo](https://res.cloudinary.com/protocolai/image/upload/v1663681622/bacalhau/labexchange\_kwdzih.jpg
+  "")
 
 
   “*Our goal is to accelerate progress by making scientific tools more
