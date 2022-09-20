@@ -1,46 +1,16 @@
 ---
 image:
   src: ''
-headline: Blog Post 1
+headline: Bacalhau Supports Decentralized Science
 excerpt: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget velit diam.
-  Cras porttitor nibh a erat lacinia, ut gravida mauris euismod. Ut interdum
-  suscipit massa sodales rhoncus.
-text: >
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget velit diam.
-  Cras porttitor nibh a erat lacinia, ut gravida mauris euismod. Ut interdum
-  suscipit massa sodales rhoncus. Fusce est augue, auctor venenatis nulla sit
-  amet, tempus cursus tortor. In dolor mi, sodales at imperdiet et, faucibus sed
-  ex. Aliquam ultrices tempus purus quis aliquet. Fusce dapibus vestibulum
-  aliquet. Suspendisse mollis ipsum at erat aliquam, et faucibus ligula
-  malesuada. Donec ac rutrum sapien, non aliquet diam. Proin sodales sagittis
-  augue.
-
-
-  ## **Subtitle Here**
-
-
-  Orci varius natoque penatibus et magnis dis parturient montes, nascetur
-  ridiculus mus. Ut tincidunt eros facilisis, cursus ligula luctus, elementum
-  dui. Proin tristique eros quis lobortis dapibus. Fusce pretium mollis
-  vehicula. Integer elementum euismod nisl, non pharetra est egestas mollis.
-  Nulla facilisi. Mauris finibus ex a tellus aliquet, et rhoncus sapien blandit.
-  Integer sapien sem, lobortis sit amet erat sit amet, varius rutrum odio. Nam
-  tempus faucibus lacus id condimentum. Phasellus nec felis porttitor, auctor
-  metus et, eleifend justo. Aliquam ac justo in diam pulvinar sagittis.
-
-
-  Phasellus scelerisque, enim vitae lacinia rutrum, urna nisl euismod ex, a
-  maximus augue velit ac enim. Aliquam erat volutpat. In tincidunt, risus sed
-  congue posuere, lacus nunc maximus lacus, sed dignissim purus erat ac quam.
-  Pellentesque scelerisque congue eros in convallis. Aliquam dictum efficitur
-  justo. Pellentesque enim dolor, efficitur at suscipit aliquet, posuere vel
-  massa. In posuere a urna tincidunt ultricies. Praesent feugiat lectus felis,
-  luctus aliquet ligula varius id. Maecenas tempor maximus quam, nec varius
-  libero varius at. Donec eu dui sit amet sapien molestie luctus. Etiam ornare
-  sed augue sit amet pretium. Ut sit amet auctor nunc. Nulla pretium ante non
-  sem venenatis, eu accumsan neque dignissim. Proin efficitur commodo nisl, et
-  vulputate tellus. Donec scelerisque ullamcorper consequat.
+  Bacalhau and Protocol Labs are proud to support the growth of the burgeoning
+  Decentralized Science or “DeSci” movement. The DeSci community aims to bring
+  the benefits of decentralized ownership models (often referred to as “Web3”
+  technologies) to the scientific research process. Companies and DAOs
+  (Decentralized Autonomous Organizations) are forming in the community to
+  empower new models of research ownership (IP), collaboration, and
+  reproducibility. 
+text: "Bacalhau and Protocol Labs are proud to support the growth of the burgeoning Decentralized Science or “DeSci” movement. The DeSci community aims to bring the benefits of decentralized ownership models (often referred to as “Web3” technologies) to the scientific research process. Companies and DAOs (Decentralized Autonomous Organizations) are forming in the community to empower new models of research ownership (IP), collaboration, and reproducibility.&#x20;\n\n## **LabDAO Partnership**\n\n\n\n\nIn support of the DeSci movement, the Bacalhau project is announcing our partnership with LabDAO, which will foster open, reproducible data processing for the broader DeSci community.\n\n\n\n\n![LabDAO Logo](https://res.cloudinary.com/protocolai/image/upload/v1663680466/bacalhau/labdao_logo_u8xacn.png)\n\n\n\n\nLabDAO’s mission is to become an open, community-run network of wet and dry laboratories for life science research. As part of its mission to develop resources for scientists to come together and work online, LabDAO is interested in adopting decentralized scientific compute infrastructure for its scientists' work. Bacalhau will partner with LabDAO to power the data processing engine for their Service [Lab Exchange](https://docs.labdao.xyz/lab-exchange/what\\_is\\_openlab \"Lab Exchange\").\n\n\n\n\n“*Our goal is to accelerate progress by making scientific tools more accessible - building distributed compute infrastructure is an essential component on the way there. We are excited to be partnering with the Bacalhau team to integrate this piece of the puzzle together*\"&#x20;\n\n\\- Niklas Rindtorff, LabDAO Founder & Core\n\n\n\n\n## **Gitcoin Grants Round 15**\n\nOur parent organization, Protocol Labs, is helping to fund the recent Gitcoin Grants Round 15 included a specific section for supporting [Decentralized Science](https://gitcoin.co/grants/explorer/?page=3\\&limit=12\\&me=false\\&sort\\_option=weighted\\_shuffle\\&collection\\_id=false\\&network=mainnet\\&state=active\\&profile=false\\&round\\_num=15\\&customer\\_name=DeSci\\&sub\\_round\\_slug=gr15-desci\\&collections\\_page=1\\&grant\\_regions=\\&grant\\_types=\\&grant\\_tags=\\&tenants=\\&idle=true\\&featured=true\\&round\\_type=false\\&tab=grants). Each Gitcoin grants program runs for 15 days and allows donors to support a wide variety of projects via quadratic voting.\_\n\n\n\n\nThe Bacalhau project supports DeSci projects of all sizes and we are excited to see the advancements resulting from this funding round.\n\n\n"
 date: '2022-09-16T04:00:00.000Z'
 ---
 
