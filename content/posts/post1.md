@@ -8,7 +8,7 @@ excerpt: >-
   partnership with LabDAO, which will foster open, reproducible data processing
   for the broader DeSci community.
 text: >
-  ## **LabDAO Partnership**
+  ## ****
 
 
   In support of the DeSci movement, the Bacalhau project is announcing our
