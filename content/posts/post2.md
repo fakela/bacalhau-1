@@ -1,44 +1,26 @@
 ---
 headline: Blog Post 2
 excerpt: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget velit diam.
-  Cras porttitor nibh a erat lacinia, ut gravida mauris euismod. Ut interdum
-  suscipit massa sodales rhoncus.
+  The Bacalhau project supports DeSci projects of all sizes and we are excited
+  to see the advancements resulting from this funding round.
 text: >
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget velit diam.
-  Cras porttitor nibh a erat lacinia, ut gravida mauris euismod. Ut interdum
-  suscipit massa sodales rhoncus. Fusce est augue, auctor venenatis nulla sit
-  amet, tempus cursus tortor. In dolor mi, sodales at imperdiet et, faucibus sed
-  ex. Aliquam ultrices tempus purus quis aliquet. Fusce dapibus vestibulum
-  aliquet. Suspendisse mollis ipsum at erat aliquam, et faucibus ligula
-  malesuada. Donec ac rutrum sapien, non aliquet diam. Proin sodales sagittis
-  augue.
+  ## **Gitcoin Grants Round 15**
 
 
-  ## **Subtitle Here**
+  ![](https://res.cloudinary.com/protocolai/image/upload/v1663680943/bacalhau/Screen\_Shot\_2022-09-20\_at\_9.31.11\_AM\_rssxtk.png
+  "")
 
 
-  Orci varius natoque penatibus et magnis dis parturient montes, nascetur
-  ridiculus mus. Ut tincidunt eros facilisis, cursus ligula luctus, elementum
-  dui. Proin tristique eros quis lobortis dapibus. Fusce pretium mollis
-  vehicula. Integer elementum euismod nisl, non pharetra est egestas mollis.
-  Nulla facilisi. Mauris finibus ex a tellus aliquet, et rhoncus sapien blandit.
-  Integer sapien sem, lobortis sit amet erat sit amet, varius rutrum odio. Nam
-  tempus faucibus lacus id condimentum. Phasellus nec felis porttitor, auctor
-  metus et, eleifend justo. Aliquam ac justo in diam pulvinar sagittis.
+  Our parent organization, Protocol Labs, is helping to fund the recent Gitcoin
+  Grants Round 15 included a specific section for supporting Decentralized
+  Science. Each Gitcoin grants program runs for 15 days and allows donors to
+  support a wide variety of projects via quadratic voting.
 
 
-  Phasellus scelerisque, enim vitae lacinia rutrum, urna nisl euismod ex, a
-  maximus augue velit ac enim. Aliquam erat volutpat. In tincidunt, risus sed
-  congue posuere, lacus nunc maximus lacus, sed dignissim purus erat ac quam.
-  Pellentesque scelerisque congue eros in convallis. Aliquam dictum efficitur
-  justo. Pellentesque enim dolor, efficitur at suscipit aliquet, posuere vel
-  massa. In posuere a urna tincidunt ultricies. Praesent feugiat lectus felis,
-  luctus aliquet ligula varius id. Maecenas tempor maximus quam, nec varius
-  libero varius at. Donec eu dui sit amet sapien molestie luctus. Etiam ornare
-  sed augue sit amet pretium. Ut sit amet auctor nunc. Nulla pretium ante non
-  sem venenatis, eu accumsan neque dignissim. Proin efficitur commodo nisl, et
-  vulputate tellus. Donec scelerisque ullamcorper consequat.
+  The Bacalhau project supports DeSci projects of all sizes and we are excited
+  to see the advancements resulting from this funding round. Get started
+  [funding DeSci grants
+  here](https://gitcoin.co/grants/explorer/?page=3\&limit=12\&me=false\&sort\_option=weighted\_shuffle\&collection\_id=false\&network=mainnet\&state=active\&profile=false\&round\_num=15\&customer\_name=DeSci\&sub\_round\_slug=gr15-desci\&collections\_page=1\&grant\_regions=\&grant\_types=\&grant\_tags=\&tenants=\&idle=true\&featured=true\&round\_type=false\&tab=grants).
 date: '2022-09-10T05:00:00.000Z'
 ---
 
