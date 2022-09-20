@@ -1,5 +1,8 @@
 ---
-headline: Blog Post 2
+image:
+  src: >-
+    https://res.cloudinary.com/protocolai/image/upload/v1663680943/bacalhau/Screen_Shot_2022-09-20_at_9.31.11_AM_rssxtk.png
+headline: Gitcoin Grants Round 15
 excerpt: >-
   The Bacalhau project supports DeSci projects of all sizes and we are excited
   to see the advancements resulting from this funding round.
