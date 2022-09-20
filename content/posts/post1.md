@@ -2,7 +2,7 @@
 image:
   src: >-
     https://res.cloudinary.com/protocolai/image/upload/v1663680466/bacalhau/labdao_logo_u8xacn.png
-headline: Bacalhau Supports Decentralized Science
+headline: Bacalhau Partners with LabDAO to Accelerate Scientific Progress
 excerpt: >-
   Bacalhau and Protocol Labs are proud to support the growth of the burgeoning
   Decentralized Science or “DeSci” movement. The DeSci community aims to bring
@@ -30,7 +30,7 @@ text: >
 
 
   ![LabDAO
-  Logo](https://res.cloudinary.com/protocolai/image/upload/v1663680466/bacalhau/labdao\_logo\_u8xacn.png
+  Logo](https://res.cloudinary.com/protocolai/image/upload/v1663681622/bacalhau/labexchange\_kwdzih.jpg
   "")
 
 
