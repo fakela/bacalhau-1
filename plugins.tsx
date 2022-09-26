@@ -22,7 +22,6 @@ export const SectionListItemsPlugin = {
         tailwindCards: 'Cards TW',
         photoCards: 'Photo Cards',
         textCards: 'Text Cards',
-        postCards: 'Post Cards',
         banner: 'Banner',
         embed: 'Embed'
       }
