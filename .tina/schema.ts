@@ -1,10 +1,8 @@
 import { defineSchema, defineConfig } from "tinacms";
 import { globalSchema } from "./global/global";
-import { postsSchema } from "./posts-collection";
 import { featureBlockSchema } from "./feature";
 import { photoCardsBlockSchema } from "./photo-cards";
 import { textCardsBlockSchema } from "./text-cards";
-import { postCardsBlockSchema } from "./post-cards";
 import { bannerBlockSchema } from "./banner";
 import { embedBlockSchema } from "./embed";
 import { tailwindFeatureBlockSchema } from "./tailwind-feature";
@@ -13,7 +11,6 @@ import { tailwindCardsBlockSchema } from "./tailwind-cards";
 export default defineSchema({
   collections: [
     globalSchema,
-    postsSchema,
     {
       label: "Pages",
       name: "pages",
@@ -37,7 +34,6 @@ export default defineSchema({
             featureBlockSchema,
             photoCardsBlockSchema,
             textCardsBlockSchema,
-            postCardsBlockSchema,
             bannerBlockSchema,
             embedBlockSchema,
             tailwindFeatureBlockSchema,

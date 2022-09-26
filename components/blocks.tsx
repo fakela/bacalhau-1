@@ -4,7 +4,6 @@ import { Cards } from "./blocks/cards";
 import { Feature } from "./blocks/feature";
 import { Banner } from "./blocks/banner";
 import { Embed } from "./blocks/embed";
-import { PostCards } from "./blocks/post-cards";
 import { TailwindFeature } from "./blocks/tailwind-feature";
 import { TailwindCards } from "./blocks/tailwind-cards";
 
@@ -61,12 +60,6 @@ export const Blocks = (props: any) => {
                 return (
                   <div data-tinafield={`blocks.${i}`} key={i + block.__typename}>
                     <TailwindCards data={block} parentField={`blocks.${i}`} />
-                  </div>
-                );
-              case "PagesBlocksPostCards":
-                return (
-                  <div data-tinafield={`blocks.${i}`} key={i + block.__typename}>
-                    <PostCards data={block} parentField={`blocks.${i}`} posts={props.posts} />
                   </div>
                 );
               default:

@@ -50,8 +50,6 @@ type Query {
   getDocumentFields: JSON!
   getGlobalDocument(relativePath: String): GlobalDocument!
   getGlobalList(before: String, after: String, first: Float, last: Float): GlobalConnection!
-  getPostsDocument(relativePath: String): PostsDocument!
-  getPostsList(before: String, after: String, first: Float, last: Float): PostsConnection!
   getPagesDocument(relativePath: String): PagesDocument!
   getPagesList(before: String, after: String, first: Float, last: Float): PagesConnection!
 }
@@ -79,7 +77,7 @@ type Collection {
   documents(before: String, after: String, first: Float, last: Float): DocumentConnection!
 }
 
-union DocumentNode = GlobalDocument | PostsDocument | PagesDocument
+union DocumentNode = GlobalDocument | PagesDocument
 
 type GlobalColors {
   primary: String
@@ -639,39 +637,6 @@ type GlobalConnection implements Connection {
   edges: [GlobalConnectionEdges]
 }
 
-type PostsImage {
-  src: String
-  alt: String
-}
-
-type Posts {
-  image: PostsImage
-  headline: String
-  excerpt: String
-  text: JSON
-  date: String
-}
-
-type PostsDocument implements Node & Document {
-  id: ID!
-  sys: SystemInfo!
-  data: Posts!
-  form: JSON!
-  values: JSON!
-  dataJSON: JSON!
-}
-
-type PostsConnectionEdges {
-  cursor: String
-  node: PostsDocument
-}
-
-type PostsConnection implements Connection {
-  pageInfo: PageInfo
-  totalCount: Float!
-  edges: [PostsConnectionEdges]
-}
-
 type PagesBlocksFeatureStyle {
   alignment: String
   contentTitle: String
@@ -875,68 +840,6 @@ type PagesBlocksTextCards {
   body: JSON
   buttons: [PagesBlocksTextCardsButtons]
   items: [PagesBlocksTextCardsItems]
-  navigationLabel: String
-}
-
-type PagesBlocksPostCardsStyle {
-  textAlignment: String
-  minHeight: String
-  padding: String
-  contentWidth: String
-  columns: String
-  typographyTitle: String
-  labelStyles: String
-  headlineStyles: String
-  subheadStyles: String
-  textStyles: String
-  contentOrder: String
-}
-
-type PagesBlocksPostCardsCardStyle {
-  fillStyles: String
-  padding: String
-  type: String
-  imageStyles: String
-  typographyTitle: String
-  labelStyles: String
-  headlineStyles: String
-  subheadStyles: String
-  textStyles: String
-  buttonTitle: String
-  buttonType: String
-}
-
-type PagesBlocksPostCardsBackgroundOrnaments {
-  src: String
-  alignment: String
-  width: String
-  height: String
-  xOffset: String
-  yOffset: String
-}
-
-type PagesBlocksPostCardsBackground {
-  fillStyles: String
-  src: String
-  position: String
-  ornaments: [PagesBlocksPostCardsBackgroundOrnaments]
-}
-
-type PagesBlocksPostCardsButtons {
-  label: String
-  link: String
-  type: String
-}
-
-type PagesBlocksPostCards {
-  style: PagesBlocksPostCardsStyle
-  cardStyle: PagesBlocksPostCardsCardStyle
-  background: PagesBlocksPostCardsBackground
-  label: String
-  headline: String
-  subhead: String
-  body: JSON
-  buttons: [PagesBlocksPostCardsButtons]
   navigationLabel: String
 }
 
@@ -1165,7 +1068,7 @@ type PagesBlocksTailwindCards {
   navigationLabel: String
 }
 
-union PagesBlocks = PagesBlocksFeature | PagesBlocksPhotoCards | PagesBlocksTextCards | PagesBlocksPostCards | PagesBlocksBanner | PagesBlocksEmbed | PagesBlocksTailwindFeature | PagesBlocksTailwindCards
+union PagesBlocks = PagesBlocksFeature | PagesBlocksPhotoCards | PagesBlocksTextCards | PagesBlocksBanner | PagesBlocksEmbed | PagesBlocksTailwindFeature | PagesBlocksTailwindCards
 
 type PagesMeta {
   pageTitle: String
@@ -1205,15 +1108,12 @@ type Mutation {
   createDocument(collection: String, relativePath: String!, params: DocumentMutation!): DocumentNode!
   updateGlobalDocument(relativePath: String!, params: GlobalMutation!): GlobalDocument!
   createGlobalDocument(relativePath: String!, params: GlobalMutation!): GlobalDocument!
-  updatePostsDocument(relativePath: String!, params: PostsMutation!): PostsDocument!
-  createPostsDocument(relativePath: String!, params: PostsMutation!): PostsDocument!
   updatePagesDocument(relativePath: String!, params: PagesMutation!): PagesDocument!
   createPagesDocument(relativePath: String!, params: PagesMutation!): PagesDocument!
 }
 
 input DocumentMutation {
   global: GlobalMutation
-  posts: PostsMutation
   pages: PagesMutation
 }
 
@@ -1763,19 +1663,6 @@ input GlobalMutation {
   redirects: [GlobalRedirectsMutation]
 }
 
-input PostsImageMutation {
-  src: String
-  alt: String
-}
-
-input PostsMutation {
-  image: PostsImageMutation
-  headline: String
-  excerpt: String
-  text: JSON
-  date: String
-}
-
 input PagesBlocksFeatureStyleMutation {
   alignment: String
   contentTitle: String
@@ -1979,68 +1866,6 @@ input PagesBlocksTextCardsMutation {
   body: JSON
   buttons: [PagesBlocksTextCardsButtonsMutation]
   items: [PagesBlocksTextCardsItemsMutation]
-  navigationLabel: String
-}
-
-input PagesBlocksPostCardsStyleMutation {
-  textAlignment: String
-  minHeight: String
-  padding: String
-  contentWidth: String
-  columns: String
-  typographyTitle: String
-  labelStyles: String
-  headlineStyles: String
-  subheadStyles: String
-  textStyles: String
-  contentOrder: String
-}
-
-input PagesBlocksPostCardsCardStyleMutation {
-  fillStyles: String
-  padding: String
-  type: String
-  imageStyles: String
-  typographyTitle: String
-  labelStyles: String
-  headlineStyles: String
-  subheadStyles: String
-  textStyles: String
-  buttonTitle: String
-  buttonType: String
-}
-
-input PagesBlocksPostCardsBackgroundOrnamentsMutation {
-  src: String
-  alignment: String
-  width: String
-  height: String
-  xOffset: String
-  yOffset: String
-}
-
-input PagesBlocksPostCardsBackgroundMutation {
-  fillStyles: String
-  src: String
-  position: String
-  ornaments: [PagesBlocksPostCardsBackgroundOrnamentsMutation]
-}
-
-input PagesBlocksPostCardsButtonsMutation {
-  label: String
-  link: String
-  type: String
-}
-
-input PagesBlocksPostCardsMutation {
-  style: PagesBlocksPostCardsStyleMutation
-  cardStyle: PagesBlocksPostCardsCardStyleMutation
-  background: PagesBlocksPostCardsBackgroundMutation
-  label: String
-  headline: String
-  subhead: String
-  body: JSON
-  buttons: [PagesBlocksPostCardsButtonsMutation]
   navigationLabel: String
 }
 
@@ -2273,7 +2098,6 @@ input PagesBlocksMutation {
   feature: PagesBlocksFeatureMutation
   photoCards: PagesBlocksPhotoCardsMutation
   textCards: PagesBlocksTextCardsMutation
-  postCards: PagesBlocksPostCardsMutation
   banner: PagesBlocksBannerMutation
   embed: PagesBlocksEmbedMutation
   tailwindFeature: PagesBlocksTailwindFeatureMutation
