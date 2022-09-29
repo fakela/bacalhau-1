@@ -32,23 +32,20 @@ blocks:
       src: ''
     label: ''
     headline: Community
-    subhead: Researchers
+    subhead: 'Research, DeSci and Web3 Community Members'
     body: >
-      We're actively soliciting feedback from the scientific community, in
-      particular researchers who:‍
+      We're actively soliciting feedback from those who:‍
 
 
-      *   Publish (share) their research findings
+      *   Collaborate on projects with other individuals via Github or a similar
+      platform.
 
-      *   Collaborate on the research project with other individuals via Github
-      or a similar platform
+      *   Have a multi-step process for their data pipeline.
 
-      *   Share their code and/or use code shared in Github as a starting point
+      *   Work on projects that can benefit from further decentralization.
 
-      *   Have a multi-step process for their research data pipeline
 
-      *   Please reach out via the Google Form button below and we'll engage
-      with you directly!
+      Please reach out via our Slack channel and we'll engage with you directly!
     buttons:
       - label: Get In Touch
         link: /
