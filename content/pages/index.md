@@ -179,21 +179,39 @@ blocks:
     label: ''
     headline: Dive In!
     subhead: ''
-    body: ''
+    body: |
+      *   Subscribe to the Bacalhau blog
+      *   Join the community discussion on our Slack channel #bacalhau
+      *   Browse Bacalhau's public code repository
     buttons:
+      - label: Blog
+        link: 'https://bacalhau.substack.com/'
+        type: primary
       - label: Slack
         link: 'https://filecoinproject.slack.com/archives/C02RLM3JHUY'
         type: primary
       - label: Source Code
         link: 'https://github.com/filecoin-project/bacalhau'
         type: primary
-      - label: Community
-        link: /community
-        type: primary
-      - label: Architecture
-        link: /architecture
-        type: primary
     _template: feature
+  - tailwind:
+      section: ''
+      wrap: ''
+      imageWrap: ''
+      image: ''
+      contentWrap: ''
+      content: ''
+      label: ''
+      headline: ''
+      subhead: ''
+      text: ''
+      buttons: ''
+    label: ''
+    headline: Subscribe
+    subhead: Here is a subhead
+    body: |
+      This is a rich text component you can add hyperlinks, etc.
+    _template: tailwindFeature
 meta:
   pageTitle: Bacalhau
   pageDescription: Reinventing Science through reproducible data pipelines
