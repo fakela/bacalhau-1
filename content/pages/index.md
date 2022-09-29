@@ -82,17 +82,16 @@ blocks:
     label: ''
     headline: ''
     subhead: >-
-      Bacalhau transforms Big Data processing by giving developers simple, low
-      cost, decentralized tools that unlock a new collaborative ecosystem
+      Bacalhau gives developers low cost, decentralized tools that unlock a new
+      collaborative ecosystem
     body: >
-      *   Fast and reliable - the network runs the jobs where the data is
-      already stored
-
-      *   Simple and familiar - use the tools you already know and love (Docker,
-      GNU, Python, R, Matlab, WASM)
-
-      *   Collaborative - All content can be shared using the globally
+      *   Collaborative - all content can be shared using the globally
       distributed IPFS network
+
+      *   Simple and Familiar - use the tools you already know via Docker and
+      WASM runtimes
+
+      *   Efficient - the network runs the jobs where the data is already stored
     _template: feature
   - tailwind:
       section: pt-16 pb-16
