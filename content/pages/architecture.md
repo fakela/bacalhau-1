@@ -47,11 +47,11 @@ blocks:
     headline: Sample Code
     subhead: Submitting Jobs is Easy
     body: |
-      $ bacalhau run ubuntu echo hello
+      $ bacalhau docker run ubuntu echo hello
 
-      $ bacalhau list --wide --sort-by=id --id-filter=\<JOB\_ID>&#x20;
+      $ bacalhau list
 
-      $ ipfs get \<RESULT\_CID>
+      $ bacalhau get CID
     _template: tailwindFeature
 meta:
   pageTitle: Bacalhau - Architecture
