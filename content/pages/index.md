@@ -46,14 +46,14 @@ blocks:
       fillStyles: bg-accent3
     label: ''
     headline: Why Bacalhau?
-    subhead: >-
-      Bacalhau seeks to address deep rooted gaps in existing data processing
-      platforms that are:
+    subhead: 'Bacalhau seeks to address deep rooted gaps in managing big data that are:'
     body: >
       *   Closed by design, difficult to share and collaborate with other
-      organizations
+      organizations.
 
-      *   Expensive and slow to process large (multi-PB) datasets
+      *   Expensive and slow to process large (multi-PB) datasets.
+
+      *   Requires rewriting to move “to the cloud”.
     _template: tailwindFeature
   - style:
       alignment: 'flex-row text-left items-end items-start-vertical sm:flex-col-reverse'
