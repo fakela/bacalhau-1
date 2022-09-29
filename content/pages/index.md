@@ -22,9 +22,8 @@ blocks:
     label: x
     headline: Bacalhau Project
     subhead: Data. Transformed.
-    body: >
-      Simple, low cost, “Distributed First” tools that unlock an open,
-      collaborative ecosystem.
+    body: |
+      Simple, low cost, compute that unlocks an open, collaborative ecosystem.
     buttons:
       - label: Learn More
         link: /architecture
