@@ -123,7 +123,7 @@ blocks:
 
 
       This architecture is referred to as **Compute Over Data** (or COD). The
-      Portuguese word for salted Cod fish is **Bacalhau **\[*bakaˈlyaw*].
+      Portuguese word for salted Cod fish is **Bacalhau** \[*bakaˈlyaw*].
     _template: tailwindFeature
   - tailwind:
       section: pb-26
