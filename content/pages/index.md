@@ -190,7 +190,7 @@ blocks:
       - label: Slack
         link: 'https://filecoinproject.slack.com/archives/C02RLM3JHUY'
         type: primary
-      - label: Source Code
+      - label: Github
         link: 'https://github.com/filecoin-project/bacalhau'
         type: primary
     _template: feature
