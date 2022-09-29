@@ -18,7 +18,7 @@ blocks:
       button: ''
     image:
       src: >-
-        https://res.cloudinary.com/protocolai/image/upload/v1655389409/bacalhau/Bacalhau_Architecture_and_Roadmap_for_the_Website_pjtcsp.jpg
+        https://res.cloudinary.com/protocolai/image/upload/v1664481107/bacalhau/bacalhau-high-level-arch-october_porak2.png
     label: x
     headline: High Level Architecture
     subhead: ''
