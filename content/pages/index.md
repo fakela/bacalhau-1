@@ -197,24 +197,6 @@ blocks:
         link: 'https://github.com/filecoin-project/bacalhau'
         type: primary
     _template: feature
-  - tailwind:
-      section: ''
-      wrap: ''
-      imageWrap: ''
-      image: ''
-      contentWrap: ''
-      content: ''
-      label: ''
-      headline: ''
-      subhead: ''
-      text: ''
-      buttons: ''
-    label: ''
-    headline: Subscribe
-    subhead: Here is a subhead
-    body: |
-      This is a rich text component you can add hyperlinks, etc.
-    _template: tailwindFeature
 meta:
   pageTitle: Bacalhau
   pageDescription: Reinventing Science through reproducible data pipelines
