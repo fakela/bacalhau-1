@@ -177,12 +177,15 @@ blocks:
     image:
       src: ''
     label: ''
-    headline: Dive In!
+    headline: Get Started
     subhead: ''
-    body: |
-      *   Subscribe to the Bacalhau blog
-      *   Join the community discussion on our Slack channel #bacalhau
-      *   Browse Bacalhau's public code repository
+    body: >
+      *   Subscribe to the Bacalhau blog.
+
+      *   Join the community discussion on our Slack channel #bacalhau .
+
+      *   Browse Bacalhau's public code repository, milestones roadmap, and
+      raise issues for feedback.
     buttons:
       - label: Blog
         link: 'https://bacalhau.substack.com/'
