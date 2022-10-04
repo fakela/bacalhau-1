@@ -144,11 +144,11 @@ blocks:
     headline: ''
     subhead: Submitting Jobs is Easy
     body: |
-      $ bacalhau docker run ubuntu echo hello
+      curl -sL https://get.bacalhau.org/install.sh | bash
 
-      $ bacalhau list
+      bacalhau docker run --download ubuntu echo hello
 
-      $ bacalhau get CID
+      bacalhau list
     buttons:
       - label: Demo Video
         link: 'https://youtu.be/4YHkmL4Ld74'
