@@ -47,11 +47,11 @@ blocks:
     headline: Sample Code
     subhead: Submitting Jobs is Easy
     body: |
-      $ bacalhau docker run ubuntu echo hello
+      curl -sL https://get.bacalhau.org/install.sh | bash
 
-      $ bacalhau list
+      bacalhau docker run --download ubuntu echo hello
 
-      $ bacalhau get CID
+      bacalhau list
     _template: tailwindFeature
 meta:
   pageTitle: Bacalhau - Architecture
