@@ -191,7 +191,7 @@ blocks:
         link: 'https://bacalhau.substack.com/'
         type: primary
       - label: Slack
-        link: 'https://filecoinproject.slack.com/archives/C02RLM3JHUY'
+        link: 'https://filecoin.io/slack'
         type: primary
       - label: Github
         link: 'https://github.com/filecoin-project/bacalhau'
