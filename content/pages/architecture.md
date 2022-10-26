@@ -49,7 +49,7 @@ blocks:
     body: |
       curl -sL https://get.bacalhau.org/install.sh | bash
 
-      bacalhau docker run --download ubuntu echo hello
+      bacalhau docker run ubuntu echo hello
 
       bacalhau list
     _template: tailwindFeature
