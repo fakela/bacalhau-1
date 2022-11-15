@@ -112,7 +112,7 @@ blocks:
     label: ''
     headline: How does it work?
     subhead: >-
-      Bacalahau is a network of open compute resources made available to serve
+      Bacalhau is a network of open compute resources made available to serve
       any data processing workload.
     body: >
       Bacalhau enables users to run arbitrary docker containers and wasm images
