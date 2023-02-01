@@ -104,6 +104,7 @@ export const Layout = ({
               }
               html {
                 scroll-behavior: smooth;
+                background: #000;
               }
               .markdown a:not(.button) {
                 color: var(--${globalData?.links?.color}-color);
@@ -157,7 +158,7 @@ export const Layout = ({
           <div className="flex flex-col flex-1">{children}</div>
           {/* Footer Blocks */}
           <Blocks { ...globalData } />
-          <div className="bg-primary text-white px-10 py-8">
+          <div className="bg-black text-white px-10 py-8">
             <ul className="justify-center flex gap-6 mx-auto text-xs mb-6">
               <li><a target="_blank" href="https://discuss.ipfs.tech/tos">Terms of Use</a></li>
               <li><a target="_blank" href="https://discuss.ipfs.tech/privacy">Privacy Policy</a></li>
