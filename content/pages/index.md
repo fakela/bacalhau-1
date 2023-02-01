@@ -1,202 +1,114 @@
 ---
 draft: true
 blocks:
-  - tailwind:
-      section: ''
-      wrap: >-
-        max-w-desktop-full mx-auto relative flex flex-row-reverse items-end
-        items-start-vertical
-      imageWrap: 'pb-16 pr-20 sm:hidden'
-      image: object-right object-scale-down
-      contentWrap: 'w-3/4 pt-52 pb-16 pl-20 sm:px-8 sm:w-full'
-      content: ''
-      label: bg-accent4 text-accent4 w-6 h-6 mb-8
-      headline: 'text-primary font-1 text-4xl mb-1 font-bold sm:text-2xl'
-      subhead: 'text-primary font-1 text-2xl mb-10 font-bold sm:text-2xl'
-      text: text-black font-2 text-base mb-8 max-w-lg
-      buttons: 'text-accent2 font-bold text-base '
-      button: ''
-    image:
-      src: >-
-        https://res.cloudinary.com/protocolai/image/upload/v1655154094/bacalhau/shapes-1_u20ojn.svg
-    label: x
-    headline: Bacalhau Project
-    subhead: Data. Transformed.
-    body: |
-      Simple, low cost, compute that unlocks an open, collaborative ecosystem.
-    buttons:
-      - label: Learn More
-        link: /architecture
-    _template: tailwindFeature
-  - tailwind:
-      section: pt-16 pb-16
-      wrap: 'max-w-desktop-full mx-auto relative '
-      imageWrap: 'pl-20 sm:hidden'
-      image: ''
-      contentWrap: 'w-8/12 ml-auto pr-20 sm:px-8 sm:w-full'
-      content: ''
-      label: ''
-      headline: >-
-        absolute left-20 font-1 font-bold text-primary text-xl sm:relative
-        sm:left-0 sm:mb-20
-      subhead: 'font-1 font-bold text-primary text-base mb-8 sm:text-xl sm:font-normal'
-      text: font-2 text-base
-      buttons: ''
-    background:
-      fillStyles: bg-accent3
-    label: ''
-    headline: Why Bacalhau?
-    subhead: 'Bacalhau seeks to address deep rooted gaps in managing big data that are:'
-    body: >
-      *   Closed by design, difficult to share and collaborate with other
-      organizations.
-
-      *   Expensive and slow to process large (multi-PB) datasets.
-
-      *   Requires rewriting to move “to the cloud”.
-    _template: tailwindFeature
   - style:
-      alignment: 'flex-row text-left items-end items-start-vertical sm:flex-col-reverse'
-      featureContent: 'w-2/3 min-h-0 '
-      padding: 'pt-0 pb-14 pr-20 pl-0 sm:pt-4 sm:pb-14 sm:pr-9 sm:pl-9'
-      featureImage: 'object-left object-scale-down '
-      imagePadding: 'pt-0 pb-20 pr-0 pl-20 sm:pt-0 sm:pb-0 sm:pr-0 sm:pl-0'
+      alignment: 'flex-col text-left items-center items-start-vertical '
+      featureContent: 'w-full min-h-0 '
+      padding: pt-0 pb-0 pr-10 pl-20
+      featureImage: 'object-center object-scale-down '
+      imagePadding: pt-36 pb-28 pr-20 pl-10
       labelStyles: 'text-black font-1 text-sm mb-0 '
-      headlineStyles: text-primary font-1 text-xl mb-0 font-bold
-      subheadStyles: >-
-        text-primary font-1 text-base mb-8 font-bold sm:text-primary sm:font-1
-        sm:text-lg sm:mb-8 
-      textStyles: 'text-black font-2 text-base mb-0 '
+      headlineStyles: 'text-black font-1 text-5xl mb-0 '
+      subheadStyles: 'text-black font-1 text-3xl mb-0 '
+      textStyles: 'text-black font-1 undefined mb-0 '
       contentOrder: labelHeadingsContent
     background:
-      fillStyles: bg-accent3
-      src: ''
-      ornaments:
-        - src: >-
-            https://res.cloudinary.com/protocolai/image/upload/v1655154093/bacalhau/shapes-2_v1e0y7.svg
-          alignment: bottom-left
-          xOffset: '80'
-          yOffset: '-80'
+      fillStyles: bg-black
     image:
-      src: ''
+      src: >-
+        https://res.cloudinary.com/protocolai/image/upload/v1675288459/bacalhau/bachlahua-logo_tvv2bp.png
     label: ''
     headline: ''
-    subhead: >-
-      Bacalhau gives developers low cost, decentralized tools that unlock a new
-      collaborative ecosystem
-    body: >
-      *   Collaborative - all content can be shared using the globally
-      distributed IPFS network
-
-      *   Simple and Familiar - use the tools you already know via Docker and
-      WASM runtimes
-
-      *   Efficient - the network runs the jobs where the data is already stored
+    subhead: ''
+    body: ''
     _template: feature
   - tailwind:
-      section: pt-16 pb-16
-      wrap: 'max-w-desktop-full mx-auto relative '
-      imageWrap: ' pl-20'
+      section: p-10
+      wrap: ''
+      imageWrap: ''
       image: ''
-      contentWrap: 'w-8/12 ml-auto pr-20 sm:px-8 sm:w-full'
-      content: ''
-      label: ''
-      headline: >-
-        absolute left-20 font-1 font-bold text-primary text-xl sm:relative
-        sm:left-0 sm:mb-20
-      subhead: 'font-1 font-bold text-primary text-base mb-8 sm:text-xl sm:font-normal'
-      text: font-2 text-base
-      buttons: ''
-    background:
-      fillStyles: bg-white
-    label: ''
-    headline: How does it work?
-    subhead: >-
-      Bacalhau is a network of open compute resources made available to serve
-      any data processing workload.
-    body: >
-      Bacalhau enables users to run arbitrary docker containers and wasm images
-      against data stored in IPFS. Bacalhau is a peer-to-peer network of nodes
-      where each node participates in executing (computing) jobs submitted to
-      the cluster.
-
-
-      This architecture is referred to as **Compute Over Data** (or COD). The
-      Portuguese word for salted Cod fish is **Bacalhau** \[*bakaˈlyaw*].
-    _template: tailwindFeature
-  - tailwind:
-      section: pb-26
-      wrap: flex max-w-desktop-full mx-auto relative items-end
-      imageWrap: 'pl-20 pb-16 sm:hidden'
-      image: ''
-      contentWrap: 'w-8/12 ml-auto pr-20 sm:w-full sm:px-8 pb-16'
+      contentWrap: ''
       content: ''
       label: ''
       headline: ''
-      subhead: 'font-1 font-bold text-primary text-base mb-8 sm:text-xl sm:font-normal'
-      text: bg-accent1 p-6 text-white text-xs font-3 mb-8
-      buttons: text-accent2 font-bold text-base space-x-10
+      subhead: ''
+      text: ''
+      buttons: ''
       button: ''
-    image:
-      src: >-
-        https://res.cloudinary.com/protocolai/image/upload/v1655154093/bacalhau/shapes-3_ivg8gb.svg
+      cardWrap: flex flex-wrap items-center gap-6 max-w-desktop-full mx-auto px-10
+      card: flex-1 text-center
+      cardImageWrap: h-10 w-full mb-4
+      cardImage: w-full h-full object-contain position-center
+      cardHeadline: text-accent1 text-sm underline font-bold
     label: ''
     headline: ''
-    subhead: Submitting Jobs is Easy
-    body: |
-      curl -sL https://get.bacalhau.org/install.sh | bash
-
-      bacalhau docker run ubuntu echo hello
-
-      bacalhau list
-    buttons:
-      - label: Demo Video
-        link: 'https://youtu.be/4YHkmL4Ld74'
-      - label: Learn More
-        link: /architecture
-    _template: tailwindFeature
-  - style:
-      alignment: 'flex-row-reverse text-left items-start items-start-vertical '
-      featureContent: 'w-full min-h-100 '
-      padding: 'pt-20 pb-20 pr-52 pl-20 sm:pt-10 sm:pb-10 sm:pr-10 sm:pl-10'
-      featureImage: 'object-center object-scale-down '
-      imagePadding: pt-0 pb-0 pr-0 pl-0
-      labelStyles: 'text-black font-1 text-sm mb-0 '
-      headlineStyles: 'text-primary font-1 text-xl mb-5 '
-      subheadStyles: 'text-primary font-1 text-lg mb-0 '
-      textStyles: 'text-black font-2 text-base mb-5 '
-      contentOrder: labelHeadingsContent
-    background:
-      fillStyles: bg-gray-light
-      ornaments:
-        - src: >-
-            https://res.cloudinary.com/protocolai/image/upload/v1655154094/bacalhau/shapes-4_t6tkoz.svg
-          alignment: bottom-right
-          xOffset: '-80'
-          yOffset: '-80'
-    image:
-      src: ''
-    label: ''
-    headline: Get Started
     subhead: ''
-    body: >
-      *   Subscribe to the Bacalhau blog.
-
-      *   Join the community discussion on our Slack channel #bacalhau .
-
-      *   Browse Bacalhau's public code repository, milestones roadmap, and
-      raise issues for feedback.
-    buttons:
-      - label: Blog
-        link: 'https://bacalhau.substack.com/'
-        type: primary
-      - label: Slack
-        link: 'https://filecoin.io/slack'
-        type: primary
-      - label: Github
-        link: 'https://github.com/filecoin-project/bacalhau'
-        type: primary
-    _template: feature
+    body: ''
+    items:
+      - image:
+          src: >-
+            https://res.cloudinary.com/protocolai/image/upload/v1675288581/bacalhau/docs_hajhzw.png
+        headline: Docs
+        subhead: ''
+        text: ''
+        buttons:
+          - label: ''
+            link: https://docs.bacalhau.org/
+      - image:
+          src: >-
+            https://res.cloudinary.com/protocolai/image/upload/v1675289394/bacalhau/github_ev9vlf.png
+        headline: Github
+        subhead: ''
+        text: ''
+        buttons:
+          - label: ''
+            link: https://github.com/filecoin-project/bacalhau
+      - image:
+          src: >-
+            https://res.cloudinary.com/protocolai/image/upload/v1675289399/bacalhau/slack_a8m96c.png
+        headline: Slack
+        subhead: ''
+        text: ''
+        buttons:
+          - label: ''
+            link: https://filecoin.io/slack
+      - image:
+          src: >-
+            https://res.cloudinary.com/protocolai/image/upload/v1675289402/bacalhau/twitter_g1wwbk.png
+        headline: Twitter
+        subhead: ''
+        text: ''
+        buttons:
+          - label: ''
+            link: https://twitter.com/BacalhauProject
+      - image:
+          src: >-
+            https://res.cloudinary.com/protocolai/image/upload/v1675289397/bacalhau/newsletter_paavvc.png
+        headline: Newsletter
+        subhead: ''
+        text: ''
+        buttons:
+          - label: ''
+            link: http://bacalhau.substack.com/
+      - image:
+          src: >-
+            https://res.cloudinary.com/protocolai/image/upload/v1675289405/bacalhau/youtube_li8hjr.png
+        headline: Youtube
+        subhead: ''
+        text: ''
+        buttons:
+          - label: ''
+            link: https://www.youtube.com/@ProtocolLabs
+      - image:
+          src: >-
+            https://res.cloudinary.com/protocolai/image/upload/v1675289391/bacalhau/contact_qtgz6h.png
+        headline: Contact
+        subhead: ''
+        text: ''
+        buttons:
+          - label: ''
+            link: /
+    _template: tailwindCards
 meta:
   pageTitle: Bacalhau
   pageDescription: Reinventing Science through reproducible data pipelines
