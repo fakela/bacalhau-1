@@ -464,6 +464,7 @@ fragment GlobalParts on Global {
         headline
         subhead
         text
+        link
         buttons {
           __typename
           label
@@ -861,6 +862,7 @@ fragment PagesParts on Pages {
         headline
         subhead
         text
+        link
         buttons {
           __typename
           label

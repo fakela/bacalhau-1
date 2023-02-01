@@ -23,7 +23,7 @@ blocks:
     body: ''
     _template: feature
   - tailwind:
-      section: p-10
+      section: py-10
       wrap: ''
       imageWrap: ''
       image: ''
@@ -35,7 +35,7 @@ blocks:
       text: ''
       buttons: ''
       button: ''
-      cardWrap: flex flex-wrap items-center gap-6 max-w-desktop-full mx-auto px-10
+      cardWrap: 'flex flex-wrap items-center gap-6 max-w-desktop-full mx-auto px-10 '
       card: flex-1 text-center
       cardImageWrap: h-10 w-full mb-4
       cardImage: w-full h-full object-contain position-center
@@ -51,63 +51,49 @@ blocks:
         headline: Docs
         subhead: ''
         text: ''
-        buttons:
-          - label: ''
-            link: https://docs.bacalhau.org/
+        link: 'https://docs.bacalhau.org/'
       - image:
           src: >-
             https://res.cloudinary.com/protocolai/image/upload/v1675289394/bacalhau/github_ev9vlf.png
         headline: Github
         subhead: ''
         text: ''
-        buttons:
-          - label: ''
-            link: https://github.com/filecoin-project/bacalhau
+        link: 'https://github.com/filecoin-project/bacalhau'
       - image:
           src: >-
             https://res.cloudinary.com/protocolai/image/upload/v1675289399/bacalhau/slack_a8m96c.png
         headline: Slack
         subhead: ''
         text: ''
-        buttons:
-          - label: ''
-            link: https://filecoin.io/slack
+        link: 'https://filecoin.io/slack'
       - image:
           src: >-
             https://res.cloudinary.com/protocolai/image/upload/v1675289402/bacalhau/twitter_g1wwbk.png
         headline: Twitter
         subhead: ''
         text: ''
-        buttons:
-          - label: ''
-            link: https://twitter.com/BacalhauProject
+        link: 'https://twitter.com/BacalhauProject'
       - image:
           src: >-
             https://res.cloudinary.com/protocolai/image/upload/v1675289397/bacalhau/newsletter_paavvc.png
         headline: Newsletter
         subhead: ''
         text: ''
-        buttons:
-          - label: ''
-            link: http://bacalhau.substack.com/
+        link: 'http://bacalhau.substack.com/'
       - image:
           src: >-
             https://res.cloudinary.com/protocolai/image/upload/v1675289405/bacalhau/youtube_li8hjr.png
         headline: Youtube
         subhead: ''
         text: ''
-        buttons:
-          - label: ''
-            link: https://www.youtube.com/@ProtocolLabs
+        link: 'https://www.youtube.com/@ProtocolLabs'
       - image:
           src: >-
             https://res.cloudinary.com/protocolai/image/upload/v1675289391/bacalhau/contact_qtgz6h.png
         headline: Contact
         subhead: ''
         text: ''
-        buttons:
-          - label: ''
-            link: /
+        link: /
     _template: tailwindCards
 meta:
   pageTitle: Bacalhau

@@ -13425,6 +13425,19 @@
                       ]
                     },
                     {
+                      "label": "Link",
+                      "name": "link",
+                      "description": "Links the whole card",
+                      "type": "string",
+                      "namespace": [
+                        "global",
+                        "blocks",
+                        "tailwindCards",
+                        "items",
+                        "link"
+                      ]
+                    },
+                    {
                       "type": "object",
                       "label": "Buttons",
                       "name": "buttons",
@@ -19032,6 +19045,19 @@
                         "tailwindCards",
                         "items",
                         "text"
+                      ]
+                    },
+                    {
+                      "label": "Link",
+                      "name": "link",
+                      "description": "Links the whole card",
+                      "type": "string",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "tailwindCards",
+                        "items",
+                        "link"
                       ]
                     },
                     {

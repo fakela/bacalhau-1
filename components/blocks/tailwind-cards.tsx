@@ -3,6 +3,7 @@ import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { Buttons } from "../buttons";
 import { isString } from "../../helpers/utilities";
 import { Section } from "../section";
+import { Button } from "tinacms";
 
 const linkTarget = (link) => {
   const isExternalLink = isString(link) && link.charAt(0) !== '#'
@@ -12,7 +13,7 @@ const linkTarget = (link) => {
 
 const Card = ({ data, index, tw, parentField = ""  }) => {
   return (
-    <div className={tw.card} data-tinafield={`${parentField}.${index}`}>
+    <a href={data.link || ""} target="_blank" className={tw.card} data-tinafield={`${parentField}.${index}`}>
       <div className={tw.cardImageWrap}>
         {data.image && (
           <img
@@ -53,7 +54,7 @@ const Card = ({ data, index, tw, parentField = ""  }) => {
           }
         </div>
       </div>
-    </div>
+    </a>
   )
 }
 

@@ -574,6 +574,7 @@ type GlobalBlocksTailwindCardsItems {
   headline: String
   subhead: String
   text: JSON
+  link: String
   buttons: [GlobalBlocksTailwindCardsItemsButtons]
 }
 
@@ -1050,6 +1051,7 @@ type PagesBlocksTailwindCardsItems {
   headline: String
   subhead: String
   text: JSON
+  link: String
   buttons: [PagesBlocksTailwindCardsItemsButtons]
 }
 
@@ -1612,6 +1614,7 @@ input GlobalBlocksTailwindCardsItemsMutation {
   headline: String
   subhead: String
   text: JSON
+  link: String
   buttons: [GlobalBlocksTailwindCardsItemsButtonsMutation]
 }
 
@@ -2076,6 +2079,7 @@ input PagesBlocksTailwindCardsItemsMutation {
   headline: String
   subhead: String
   text: JSON
+  link: String
   buttons: [PagesBlocksTailwindCardsItemsButtonsMutation]
 }
 

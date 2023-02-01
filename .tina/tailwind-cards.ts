@@ -296,6 +296,12 @@ export const tailwindCardsBlockSchema: TinaTemplate = {
           type: "rich-text",
         },
         {
+          label: "Link",
+          name: "link",
+          description: "Links the whole card",
+          type: "string",
+        },
+        {
           type: "object",
           label: "Buttons",
           name: "buttons",

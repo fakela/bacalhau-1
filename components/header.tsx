@@ -67,7 +67,9 @@ export const Header = ({
       </a>
     );
   }
-
+  return(
+    <></>
+  )
   return (
     <section className="relative">
       <div className={`${sectionClasses} sm:h-screen absolute z-40 top-0 left-0 right-0`}>
