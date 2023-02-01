@@ -2,7 +2,7 @@
   "siteUrl": "bacalhau.org",
   "gtmId": "G-D6NP6P151C",
   "favicon": "https://res.cloudinary.com/protocolai/image/upload/v1655487587/bacalhau/bacalhau_icon_favicon_1_wtladw.png",
-  "desktopWidth": "1440",
+  "desktopWidth": "1100",
   "colors": {
     "primary": "#04206F",
     "accent1": "#1FC3CD",
@@ -55,55 +55,15 @@
   "logo": {
     "logoType": "",
     "logoTypeStyle": "text-white undefined text-base undefined font-bold",
-    "image": "https://res.cloudinary.com/protocolai/image/upload/v1655154098/bacalhau/bacalhau-logo_cnieju.svg",
+    "image": "",
     "imageWidth": "70",
     "imageHeight": "31",
     "imageMargin": "24"
   },
   "nav": {
-    "navItems": [
-      {
-        "label": "Why Bacalhau",
-        "link": "/"
-      },
-      {
-        "label": "Architecture",
-        "link": "/architecture"
-      },
-      {
-        "label": "Case Studies",
-        "link": "/casestudies/"
-      },
-      {
-        "label": "Community",
-        "link": "/community"
-      },
-      {
-        "label": "Blog",
-        "link": "https://bacalhau.substack.com/"
-      },
-      {
-        "label": "Docs",
-        "link": "https://docs.bacalhau.org/"
-      }
-    ],
     "navAlignment": "text-right",
     "navTypeStyle": "text-primary font-1 text-sm mb-0 ",
     "navBackgroundColor": "bg-white",
     "padding": "pt-10 pb-10 pr-20 pl-20"
-  },
-  "blocks": [
-    {
-      "style": {
-        "minHeight": "min-h-0",
-        "fullWidth": false,
-        "padding": "pt-20 pb-20 pr-20 pl-20 sm:pt-10 sm:pb-10 sm:pr-10 sm:pl-10"
-      },
-      "background": {
-        "fillStyles": "bg-black"
-      },
-      "markup": "<div class=\"flex flex-row items-start w-full sm:flex-col\">\n  <div class=\"w-1/5 mb-8\">\n    <img src=\"https://res.cloudinary.com/protocolai/image/upload/v1655154094/bacalhau/bacalhau-logo-white_jmgclc.svg\" width=\"71\" height=\"31\" />\n  </div>\n  <div class=\"w-1/5 text-white text-base leading-loose font-2 mb-8\">\n    <h4 class=\"font-bold\">Pages</h4>\n    <ul>\n      <li><a href=\"/architecture\">Architecture</a></li>\n      <li><a href=\"/casestudies\">Case Studies</a></li>\n      <li><a href=\"/community\">Community</a></li>\n<li><a href=\"http://bacalhau.substack.com/\">Blog</a></li>\n      <li><a href=\"https://docs.bacalhau.org/\">Docs</a></li>\n    </ul>\n  </div>\n  <div class=\"w-1/5 text-white text-base leading-loose font-2 mb-8\">\n    <h4 class=\"font-bold\">Contact Us</h4>\n    <ul>\n      <li><a href=\"https://filecoin.io/slack\">Slack</a></li>\n      <li><a href=\"https://github.com/filecoin-project/bacalhau\">Github</a></li>\n    </ul>\n  </div>\n  <div class=\"flex-1 flex flex-row-reverse gap-8\">\n<a href=\"https://github.com/filecoin-project/bacalhau\">      \n <img src=\"https://res.cloudinary.com/protocolai/image/upload/v1655358399/bacalhau/github_wu5qtn.svg\" width=\"32\" height=\"32\"/> </a>\n<a href=\"https://filecoin.io/slack\">   \n <img src=\"https://res.cloudinary.com/protocolai/image/upload/v1655358403/bacalhau/slack_f3zkob.svg\" width=\"32\" height=\"32\" /></a>\n  </div>\n</div>\n",
-      "_template": "embed"
-    }
-  ]
+  }
 }
