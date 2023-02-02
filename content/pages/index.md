@@ -47,53 +47,53 @@ blocks:
     items:
       - image:
           src: >-
-            https://res.cloudinary.com/protocolai/image/upload/v1675288581/bacalhau/docs_hajhzw.png
+            https://res.cloudinary.com/protocolai/image/upload/v1675351964/bacalhau/file-solid_eqvc43.svg
         headline: Docs
         subhead: ''
         text: ''
         link: 'https://docs.bacalhau.org/'
       - image:
           src: >-
-            https://res.cloudinary.com/protocolai/image/upload/v1675289394/bacalhau/github_ev9vlf.png
+            https://res.cloudinary.com/protocolai/image/upload/v1675352046/bacalhau/github_d9by2p.svg
         headline: Github
         subhead: ''
         text: ''
         link: 'https://github.com/filecoin-project/bacalhau'
       - image:
           src: >-
-            https://res.cloudinary.com/protocolai/image/upload/v1675289399/bacalhau/slack_a8m96c.png
+            https://res.cloudinary.com/protocolai/image/upload/v1675352053/bacalhau/slack_kig4zs.svg
         headline: Slack
         subhead: ''
         text: ''
         link: 'https://filecoin.io/slack'
       - image:
           src: >-
-            https://res.cloudinary.com/protocolai/image/upload/v1675289402/bacalhau/twitter_g1wwbk.png
+            https://res.cloudinary.com/protocolai/image/upload/v1675352056/bacalhau/twitter_dlcwra.svg
         headline: Twitter
         subhead: ''
         text: ''
         link: 'https://twitter.com/BacalhauProject'
       - image:
           src: >-
-            https://res.cloudinary.com/protocolai/image/upload/v1675289397/bacalhau/newsletter_paavvc.png
+            https://res.cloudinary.com/protocolai/image/upload/v1675352049/bacalhau/newspaper-solid_a6wreq.svg
         headline: Newsletter
         subhead: ''
         text: ''
         link: 'http://bacalhau.substack.com/'
       - image:
           src: >-
-            https://res.cloudinary.com/protocolai/image/upload/v1675289405/bacalhau/youtube_li8hjr.png
+            https://res.cloudinary.com/protocolai/image/upload/v1675352060/bacalhau/youtube_viqwcn.svg
         headline: Youtube
         subhead: ''
         text: ''
-        link: 'https://www.youtube.com/@ProtocolLabs'
+        link: 'https://www.youtube.com/channel/UCUgZfGPLRxnxpUK3tSLsmMg'
       - image:
           src: >-
-            https://res.cloudinary.com/protocolai/image/upload/v1675289391/bacalhau/contact_qtgz6h.png
+            https://res.cloudinary.com/protocolai/image/upload/v1675352042/bacalhau/envelope-solid_wve3hk.svg
         headline: Contact
         subhead: ''
         text: ''
-        link: /
+        link: 'https://bit.ly/bacalhau-contactus'
     _template: tailwindCards
 meta:
   pageTitle: Bacalhau
