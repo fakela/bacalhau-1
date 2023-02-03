@@ -65,7 +65,7 @@ blocks:
         headline: Slack
         subhead: ''
         text: ''
-        link: 'https://filecoin.io/slack'
+        link: 'https://bit.ly/bacalhau-slack'
       - image:
           src: >-
             https://bit.ly/bacalhau-slack
