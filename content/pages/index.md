@@ -68,7 +68,7 @@ blocks:
         link: 'https://bit.ly/bacalhau-slack'
       - image:
           src: >-
-            https://bit.ly/bacalhau-slack
+            https://res.cloudinary.com/protocolai/image/upload/v1675352056/bacalhau/twitter_dlcwra.svg
         headline: Twitter
         subhead: ''
         text: ''
