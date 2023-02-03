@@ -39,7 +39,7 @@ blocks:
       card: flex-1 text-center
       cardImageWrap: h-10 w-full mb-4
       cardImage: w-full h-full object-contain position-center
-      cardHeadline: text-accent1 text-sm underline font-bold
+      cardHeadline: text-white text-sm font-bold
     label: ''
     headline: ''
     subhead: ''
