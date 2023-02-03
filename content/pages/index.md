@@ -68,7 +68,7 @@ blocks:
         link: 'https://filecoin.io/slack'
       - image:
           src: >-
-            https://res.cloudinary.com/protocolai/image/upload/v1675352056/bacalhau/twitter_dlcwra.svg
+            https://bit.ly/bacalhau-slack
         headline: Twitter
         subhead: ''
         text: ''
