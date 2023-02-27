@@ -58,7 +58,7 @@ blocks:
         headline: Github
         subhead: ''
         text: ''
-        link: 'https://github.com/filecoin-project/bacalhau'
+        link: 'https://github.com/bacalhau-project/bacalhau'
       - image:
           src: >-
             https://res.cloudinary.com/protocolai/image/upload/v1675352053/bacalhau/slack_kig4zs.svg
